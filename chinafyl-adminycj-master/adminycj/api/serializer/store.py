@@ -1,0 +1,58 @@
+from api.models.forecast import Forecast
+from api.models.rule import RuleData
+from api.models.store_Info import Store, PersonInfo
+
+forecast_ser = [
+                   Store.id,
+                   Store.store_name,
+                   PersonInfo.name,
+                   Store.phone,
+                   Store.administrative,
+                   Store.longitude,
+                   Store.latitude,
+                   Store.address,
+                   Forecast.forecast_date,
+                   Forecast.result,
+]
+
+rule_score_ser = [
+    RuleData.store_id,
+    RuleData.person01_nativeplace,
+    RuleData.person02_nativeplace,
+    RuleData.is_bigillegal,
+    RuleData.is_downgrade,
+    RuleData.month,
+    RuleData.canton_id,
+    RuleData.is_criminal,
+    RuleData.is_illegal,
+    RuleData.cigar_property_jia,
+    RuleData.cigar_property_fei,
+    RuleData.cigar_property_zou,
+    RuleData.logistics,
+    RuleData.car,
+    RuleData.unlicensed_transport_times,
+    RuleData.unlicensed_transport_num,
+    RuleData.unlicensed_transport_price,
+    RuleData.purchase_illegcigar_times,
+    RuleData.purchase_illegcigar_num,
+    RuleData.purchase_illegcigar_price,
+    RuleData.sell_illegcigar_times,
+    RuleData.sell_illegcigar_num,
+    RuleData.sell_illegcigar_price,
+    RuleData.over_postcigar_times,
+    RuleData.over_postcigar_num,
+    RuleData.over_postcigar_price,
+    RuleData.sell_abroadcigar_times,
+    RuleData.sell_abroadcigar_num,
+    RuleData.sell_abroadcigar_price,
+    RuleData.helpothers_transport_times,
+    RuleData.helpothers_transport_num,
+    RuleData.helpothers_transport_price,
+    RuleData.twoyear_illegaltimes,
+    RuleData.in_province_times,
+    RuleData.in_province_num,
+    RuleData.in_province_price,
+    RuleData.out_of_province_times,
+    RuleData.out_of_province_num,
+    RuleData.out_of_province_price
+]

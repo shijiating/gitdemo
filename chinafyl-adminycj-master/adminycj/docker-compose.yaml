@@ -1,0 +1,40 @@
+version: "3"
+services:
+
+  flaskapp:
+    image: gemingyu/py3flask:ycj
+    build:
+      context: /root/adminycj
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5006"
+    depends_on:
+      - redis
+    volumes:
+      - "/root/adminycj:/adminycj"
+
+  database:
+    image: mysql:latest
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    environment:
+      MYSQL_ROOT_PASSWORD: ycj20200601
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+      --lower_case_table_names=1
+    ports:
+      - 3306:3307
+    volumes:
+      - "/data:/var/lib/mysql"
+
+  redis:
+    image: redis:latest
+    deploy:
+      replicas: 1

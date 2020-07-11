@@ -1,0 +1,19 @@
+2020/06/22-16:41:09.617 b1d Reusing MANIFEST /home/sjt/.config/Postman/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2020/06/22-16:41:09.625 bb6 Level-0 table #5: started
+2020/06/22-16:41:09.628 bb6 Level-0 table #5: 498 bytes OK
+2020/06/22-16:41:09.630 bb6 Delete type=0 #3
+2020/06/22-16:41:09.631 bb6 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2020/06/22-16:41:09.685 bb6 Level-0 table #7: started
+2020/06/22-16:41:09.686 bb6 Level-0 table #7: 476 bytes OK
+2020/06/22-16:41:09.688 bb6 Delete type=0 #4
+2020/06/22-16:41:09.688 bb6 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2020/06/22-16:42:29.801 bb6 Level-0 table #9: started
+2020/06/22-16:42:29.803 bb6 Level-0 table #9: 30652 bytes OK
+2020/06/22-16:42:29.804 bb6 Delete type=0 #6
+2020/06/22-16:42:29.804 bb6 Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x00\x00\x05' @ 2286 : 1
+2020/06/22-16:42:29.804 bb6 Compacting 1@0 + 1@1 files
+2020/06/22-16:42:29.805 bb6 Generated table #10@0: 1330 keys, 15937 bytes
+2020/06/22-16:42:29.805 bb6 Compacted 1@0 + 1@1 files => 15937 bytes
+2020/06/22-16:42:29.806 bb6 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/06/22-16:42:29.806 bb6 Delete type=2 #9
+2020/06/22-16:42:29.808 bb6 Manual compaction at level-0 from '\x00\x05\x00\x00\x05' @ 2286 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

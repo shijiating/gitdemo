@@ -1,0 +1,1847 @@
+$(function() {
+
+    $('.yzm').click(function() { //刷新验证码
+
+        $(this).attr('src', 'yzm.php?t=' + Math.random());
+
+    });
+
+
+
+    /*站点地图（勿删）*/
+
+    $('.openSitemap1').click(function() {
+
+        var id = $(this).attr('title');
+
+        $('.' + id).toggle();
+
+        if ($('.' + id).css('display') == 'none') {
+
+            $(this).html('点击展开');
+
+        } else {
+
+            $(this).html('点击关闭');
+
+        }
+
+    });
+
+
+
+
+
+    $('#menuChanpin').hover(function() {
+
+        $('#prodSubmenu').show();
+
+        $(this).children('a').addClass('showProdSubmenu');
+
+    }, function() {
+
+        $('#prodSubmenu').hide();
+
+        $(this).children('a').removeClass('showProdSubmenu');
+
+    })
+
+
+
+
+
+
+
+    $('.gmLinks a').hover(function() {
+
+        $('.active').removeClass('active');
+
+        $(this).addClass('active');
+
+    });
+
+
+
+    $('.telQQ p img').hover(function() {
+
+        if ($(this).attr('id') == 'tel') {
+
+            $(this).attr('src', 'http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/formysql/tel_a.png');
+
+            $('.telNum').show();
+
+            $('#qq').attr('src', 'http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/formysql/qq.png');
+
+            $('.qqNum').hide();
+
+        } else {
+
+            $(this).attr('src', 'http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/formysql/qq_a.png');
+
+            $('.qqNum').show();
+
+            $('#tel').attr('src', 'http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/formysql/tel.png');
+
+            $('.telNum').hide();
+
+        }
+
+    });
+
+
+
+
+
+    // $(window).scroll(function(){
+
+    //     var top = $(this).scrollTop();
+
+    //     if(top > 100){
+
+    //         $('.goTop').show();
+
+    //     }else{
+
+    //         $('.goTop').hide();
+
+    //     }
+
+    // });
+
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,
+        loop: true,
+    });
+
+
+
+
+
+
+    /***********侧边栏优化改版0511 start******************************/
+
+    /*在线联系动画初始化*/
+
+    _rotate_start("msg");
+
+
+
+    //当点击跳转链接后，回到页面顶部位置
+
+    $(".Rtop").click(function() {
+
+        $('body,html').animate({ scrollTop: 0 }, 500);
+
+        return false;
+
+    });
+
+
+
+    $(window).scroll(function() {
+
+        var scrollHeight = $(this).scrollTop();
+
+        if (scrollHeight > 100) {
+
+            $('.Rtop').removeClass('dn');
+
+            $('.tool-line:last').removeClass('dn');
+
+        } else {
+
+            $('.Rtop').addClass('dn');
+
+            $('.tool-line:last').addClass('dn');
+
+        }
+
+    });
+
+
+
+
+
+
+
+    $('.tel').hover(function() {
+
+        $('.tel img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/tel_h.png");
+
+        $('.hidetelBox').css("display", "block");
+
+    }, function() {
+
+        $('.tel img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/tel.png");
+
+        $('.hidetelBox').css("display", "none");
+
+    });
+
+
+
+    $('.mail').hover(function() {
+
+        $('.mail img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/mail_h.png");
+
+        $('.hidemailBox').css("display", "block");
+
+    }, function() {
+
+        $('.mail img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/mail.png");
+
+        $('.hidemailBox').css("display", "none");
+
+    });
+
+
+
+    $('.free').hover(function() {
+
+        $('.free img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/free_h.png");
+
+        $('.hidefreeBox').css("display", "block");
+
+    }, function() {
+
+        $('.free img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/free.png");
+
+        $('.hidefreeBox').css("display", "none");
+
+    });
+
+
+
+    $('.question').hover(function() {
+
+        $('.question img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/question_h.png");
+
+        $('.hidequestionBox').css("display", "block");
+
+    }, function() {
+
+        $('.question img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/question.png");
+
+        $('.hidequestionBox').css("display", "none");
+
+    });
+
+
+
+    $('.tmairuan').hover(function() {
+
+        $('.tmairuan img').eq(0).attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/mairuan_h.png");
+
+        $('.hidetmairuanBox').css("display", "block");
+
+    }, function() {
+
+        $('.tmairuan img').eq(0).attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/mairuan.png");
+
+        $('.hidetmairuanBox').css("display", "none");
+
+    });
+
+
+
+    $('.Rtop').hover(function() {
+
+        $('.Rtop img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/top_h.png");
+
+        $('.hideRtop').css("display", "block");
+
+    }, function() {
+
+        $('.Rtop img').attr("src", "http://cjcmssource.webtest.com/WebSource/formysql/news/old/uploads/images/sidebar/top.png");
+
+        $('.hideRtop').css("display", "none");
+
+    });
+
+    /***********侧边栏优化改版0511 end******************************/
+
+
+
+
+
+
+
+});
+
+//  goumai_nav_mr.js
+$(function(){
+
+	// 鼠标悬浮展开
+
+	var navHeight = $('.goumai_Nav_mr .navbox').height();
+
+    if(navHeight>41){
+
+        $('.goumai_Nav_mr .navarrow').show();
+
+    }
+
+
+
+    $('.goumai_Nav_mr .navwindow').hover(function(){
+
+        $(this).closest('.navwindow').stop(true).animate({
+
+            height : navHeight+'px'
+
+        },300);
+
+    },function(){
+
+        $(this).closest('.navwindow').stop(true).animate({
+
+            height : '41px'
+
+        },300);
+
+    });
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+/***********侧边栏优化改版在线客服动效 start******************************/
+
+var _rotate_deg = 0; //回正 回到0度
+
+var _rotate_angle = 30; //旋转度数 30度
+
+var _rotate_deg_step = 5; //每次旋转角度，能够被_angle整除
+
+var _rotate_duration = 1; //每次旋转时间
+
+var _rotate_count = 0; //初始旋转次数
+
+var _rotate_count_max = 6; //最大旋转次数
+
+var _rotate_timer = null;
+
+var _rotate_stop_time = 0;
+
+var _rotate_stop_max_time = 500; //停止时间3秒
+
+
+
+function _rotate_rotate(item) {
+
+    if (_rotate_count == _rotate_count_max) {
+
+        if (_rotate_deg == 0) {
+
+            _rotate_stop_time = _rotate_stop_time + _rotate_duration;
+
+            if (_rotate_stop_time == _rotate_stop_max_time) {
+
+                _rotate_stop_time = 0;
+
+                _rotate_count = 0;
+
+            }
+
+            return;
+
+        }
+
+        _rotate_deg = _rotate_deg + _rotate_deg_step;
+
+        $("#" + item).css("transform", "rotate(" + _rotate_deg + "deg)");
+
+        return;
+
+    }
+
+
+
+    _rotate_deg = _rotate_deg + _rotate_deg_step;
+
+    if (_rotate_deg == _rotate_angle || _rotate_deg == -_rotate_angle) {
+
+        _rotate_count = _rotate_count + 1;
+
+        _rotate_deg_step = -_rotate_deg_step;
+
+    }
+
+    $("#" + item).css("transform", "rotate(" + _rotate_deg + "deg)");
+
+}
+
+
+
+function _rotate_start(item) {
+
+    _rotate_timer = setInterval("_rotate_rotate('" + item + "')", _rotate_duration);
+
+}
+
+
+
+function _rotate_stop() {
+
+    clearInterval(_rotate_timer);
+
+}
+
+/***********侧边栏优化改版在线客服动效 end******************************/
+
+
+
+
+
+
+
+/*页面*/
+
+
+
+
+
+/*非购买表单短信 取的id不一样
+
+typeid 3申请下载 4申请购买 8购买验证*/
+
+function sendverify(typeid) {
+
+    var smsuser = $.trim($('#userName').val());
+
+    var userTel = $.trim($('#userTel').val());
+
+    var yzm = $.trim($('#yzm').val());
+
+
+
+
+
+    if (!CheckData("姓名", smsuser, "pname", true)) {
+
+        getFocus('userName');
+
+        return false;
+
+    }
+
+    if (!CheckData("联系电话", userTel, "telnum", true)) {
+
+        getFocus('userTel');
+
+        return false;
+
+    }
+
+    if (!CheckData2("验证码", yzm, "pname", true)) {
+
+        getFocus('yzm');
+
+        return false;
+
+    }
+
+
+
+    $.post('verifysms.php', { smsuser: smsuser, mobile: userTel, yzm: yzm, typeid: typeid, action: 'sendmsg' }, function(data) {
+
+        if (data.code == 103) {
+
+            sendverifySecond($('#sendverifyBtn'), 90);
+
+            changeYzm();
+
+        } else if (data == 'yzm') {
+
+            alert('验证码错误！');
+
+            getFocus('yzm');
+
+        } else {
+
+            alert(data.msg);
+
+        }
+
+    });
+
+
+
+}
+
+/*购买表单短信 取的id不一样
+
+typeid 3申请下载 4申请购买 8购买验证*/
+
+function sendverifyGM(typeid) {
+
+    var smsuser = $.trim($('#username').val());
+
+    var userTel = $.trim($('#tel').val());
+
+    var yzm = $.trim($('#yzm').val());
+
+
+
+    if (!CheckData("姓名", smsuser, "pname", true)) {
+
+        getFocus('username');
+
+        return false;
+
+    }
+
+
+
+    if (!CheckData("联系电话", userTel, "telnum", true)) {
+
+        getFocus('tel');
+
+        return false;
+
+    }
+
+    if (!CheckData2("验证码", yzm, "pname", true)) {
+
+        getFocus('yzm');
+
+        return false;
+
+    }
+
+
+
+    $.post('verifysms.php', { smsuser: smsuser, mobile: userTel, yzm: yzm, typeid: typeid, action: 'sendmsg' }, function(data) {
+
+        if (data.code == 103) {
+
+            sendverifySecond($('#sendverify'), 90);
+
+            changeYzm();
+
+        } else if (data == 'yzm') {
+
+            alert('验证码错误！');
+
+            getFocus('yzm');
+
+        } else {
+
+            alert(data.msg);
+
+        }
+
+    });
+
+}
+
+
+
+
+
+function sendverifySecond(ele, time) {
+
+    ele.attr('disabled', true);
+
+    t = setInterval(function() {
+
+        if (time <= 0) {
+
+            clearInterval(t);
+
+            ele.removeAttr('disabled').html('获取手机验证码');
+
+            return;
+
+        }
+
+        ele.html('获取手机验证码(' + time + 's)');
+
+        --time;
+
+    }, 1000);
+
+}
+
+
+
+function checkverify() {
+
+    var smsuser = $.trim($('#userName').val());
+
+    var userTel = $.trim($('#userTel').val());
+
+    var verify = $.trim($('#verify').val());
+
+
+
+    if (!CheckData("姓名", smsuser, "pname", true)) {
+
+        getFocus('userName');
+
+        return false;
+
+    }
+
+    if (!CheckData("联系电话", userTel, "telnum", true)) {
+
+        getFocus('userTel');
+
+        return false;
+
+    }
+
+    if (!CheckData("手机验证码", verify, "pname", true)) {
+
+        getFocus('verify');
+
+        return false;
+
+    }
+
+
+
+    $.post('verifysms.php', { smsuser: smsuser, mobile: userTel, verify: verify, action: 'submitinfo' }, function(data) {
+
+        if (data.code == 105) {
+
+            $('.huodongYZ').hide();
+
+            $('#orderForm').show();
+
+            $('#username').val(smsuser);
+
+            $('#tel').val(userTel);
+
+        } else {
+
+            alert(data.msg);
+
+            getFocus('verify');
+
+        }
+
+    });
+
+}
+
+
+
+
+
+/*申请下载/购买
+
+*申请下载弹框：onclick="getDownload()";
+
+*申请购买验证：sendGoumaiInfo();
+
+*/
+
+function getDownload(softname, os) {
+
+
+
+    var premium = '',
+        mysql = '',
+        essentials = '',
+        mariadb = '',
+        sqlserver = '',
+        oracle = '',
+        sqlite = '',
+        postgresql = '',
+        modeler = '',
+        reportviewer = '';
+
+    var win = '',
+        mac = '',
+        linux = '';
+
+    switch (softname) {
+
+        case 'premium':
+            premium = ' selected ';
+            break;
+
+        case 'essentials':
+            essentials = ' selected ';
+            break;
+
+        case 'mysql':
+            mysql = ' selected ';
+            break;
+
+        case 'mariadb':
+            mariadb = ' selected ';
+            break;
+
+        case 'sqlserver':
+            sqlserver = ' selected ';
+            break;
+
+        case 'oracle':
+            oracle = ' selected ';
+            break;
+
+        case 'sqlite':
+            sqlite = ' selected ';
+            break;
+
+        case 'postgresql':
+            postgresql = ' selected ';
+            break;
+
+        case 'modeler':
+            modeler = ' selected ';
+            break;
+
+        case 'reportviewer':
+            reportviewer = ' selected ';
+            break;
+
+    }
+
+
+
+    switch (os) {
+
+        case 'win':
+            win = ' selected ';
+            break;
+
+        case 'mac':
+            mac = ' selected ';
+            break;
+
+        case 'linux':
+            linux = ' selected ';
+            break;
+
+    }
+
+
+
+    var selectSoft = '<select id="softname">' +
+
+        '<option value="premium"' + premium + '>Navicat Premium</option>' +
+
+        '<option value="essentials"' + essentials + '>Navicat Essentials</option>' +
+
+        '<option value="mysql"' + mysql + '>Navicat for MySQL</option>' +
+
+        '<option value="mariadb"' + mariadb + '>Navicat for MariaDB</option>' +
+
+        '<option value="sqlserver"' + sqlserver + '>Navicat for SQL Server</option>' +
+
+        '<option value="oracle"' + oracle + '>Navicat for Oracle</option>' +
+
+        '<option value="sqlite"' + sqlite + '>Navicat for SQLite</option>' +
+
+        '<option value="postgresql"' + postgresql + '>Navicat for PostgreSQL</option>' +
+
+        '<option value="modeler"' + modeler + '>Navicat Data Modeler</option>' +
+
+        '<option value="reportviewer"' + reportviewer + '>Navicat Report Viewer</option>' +
+
+        '</select>';
+
+    var selectOs = '<select id="os">' +
+
+        '<option value="windows"' + win + '>Windows</option>' +
+
+        '<option value="mac"' + mac + '>Mac</option>' +
+
+        '<option value="linux"' + linux + '>Linux</option>' +
+
+        '</select>';
+
+
+
+    $('body').append('<div class="xiazaiInfoBG"></div>');
+
+    var str = '<div class="xiazaiContent">' +
+
+        '<div class="xiazaiContentDis"><img onclick="closeXiazaiInfo();" class="close" src="images/close.png">' +
+
+        '<div class="xiazaiInfoContentForm">' +
+
+        '<h3 class="fs16 pb8">Navicat中文版申请试用</h3>' +
+
+        '<p class="lh25 pb8">请认真填写以下信息，我们会立即通过邮件将Navicat中文版下载地址发送给您：</p>' +
+
+        '<table>' +
+
+        '<tbody>' +
+
+        '<tr>' +
+
+        '<td>' +
+
+        '软件名称：' +
+
+        '</td>' +
+
+        '<td>' +
+
+        selectSoft +
+
+        '</td>' +
+
+        '<td>' +
+
+        '操作系统：' +
+
+        '</td>' +
+
+        '<td>' +
+
+        selectOs +
+
+        '</td>' +
+
+        '</tr>' +
+
+        '<tr>' +
+
+        '<td>' +
+
+        '真实姓名：' +
+
+        '</td>' +
+
+        '<td width="200">' +
+
+        '<input type="text" id="userName" name="userName">' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '电子邮箱：' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '<input type="text" id="userMail" name="userMail">' +
+
+        '</td>' +
+
+
+
+        '</tr>' +
+
+        '<tr>' +
+
+        '<td>' +
+
+        '手机号码：' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '<input type="text" id="userTel" name="userTel">' +
+
+
+
+        '</td>' +
+
+        '<td>' +
+
+        '验证码' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '<input type="text" id="yzm" name="yzm" style="width:90px">' +
+
+        '<img class="yzm hand ml10" src="yzm.php?t=' + Math.random() + '" onclick="changeYzm()"> ' +
+
+        '</td>' +
+
+        '</tr>' +
+
+        '<tr>' +
+
+        '<td>' +
+
+        '手机验证码：' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '<input type="text" id="verify" name="verify">' +
+
+        ' <button id="sendverifyBtn" type="button" onclick="sendverify()">获取手机验证码</button>' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '</td>' +
+
+        '</tr>' +
+
+        '<tr>' +
+
+        '<td>' +
+
+        '单位名称：' +
+
+        '</td>' +
+
+        '<td width="">' +
+
+        '<input type="text" id="company" name="company">' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '工作岗位：' +
+
+        '</td>' +
+
+        '<td>' +
+
+        '<input type="text" id="job" name="job">' +
+
+        '</td>' +
+
+        '</tr>' +
+
+        '<tr>' +
+
+        '<td>' +
+
+        '' +
+
+        '</td>' +
+
+        '<td colspan="2">' +
+
+        '' +
+
+        '<td align="right">' +
+
+        '<input type="submit" value="发送请求" id="sendMessage" onclick="sendXiazaiInfo()">' +
+
+        '</td>' +
+
+        '</tr>' +
+
+        '</tbody>' +
+
+        '</table>' +
+
+        '</div>' +
+
+        '</div>' +
+
+        '</div>';
+
+
+
+
+
+
+
+    $('body').append(str);
+
+
+
+}
+
+
+
+function changeYzm() {
+
+    $('.yzm').attr('src', 'yzm.php?t=' + Math.random());
+
+}
+
+
+
+
+
+function closeXiazaiInfo() {
+
+    $('.xiazaiInfoBG').remove();
+
+    $('.xiazaiContent').remove();
+
+}
+
+
+
+
+
+function sendXiazaiInfo() {
+
+    var os = $.trim($('#os').val());
+
+    var banben = $.trim($('#softname').val());
+
+    var userName = $.trim($('#userName').val());
+
+    var userMail = $.trim($('#userMail').val());
+
+    var userTel = $.trim($('#userTel').val());
+
+    var verify = $.trim($('#verify').val());
+
+    var company = $.trim($('#company').val());
+
+    var job = $.trim($('#job').val());
+
+
+
+    if (!CheckData2("真实姓名", userName, "pname", true)) {
+
+        getFocus('userName');
+
+        return false;
+
+    }
+
+    if (!CheckData2("电子邮箱", userMail, "email", true)) {
+
+        getFocus('userMail');
+
+        return false;
+
+    }
+
+    if (!CheckData2("您的联系电话(手机)", userTel, "phone", true)) {
+
+        getFocus('userTel');
+
+        return false;
+
+    }
+
+
+
+    if (!CheckData("验证码", verify, "pname", true)) {
+
+        getFocus('verify');
+
+        return false;
+
+    }
+
+
+
+    if (!CheckData2("单位名称", company, "pname", true)) {
+
+        getFocus('company');
+
+        return false;
+
+    }
+
+    if (!CheckData2("工作岗位", job, "pname", false)) {
+
+        getFocus('job');
+
+        return false;
+
+    }
+
+
+
+    $.post('verifysms.php', { smsuser: userName, mobile: userTel, verify: verify, action: 'submitinfo' }, function(data) {
+
+        if (data.code == 105) {
+
+            $('.xiazaiInfoContentForm').html('<p class="fs20 pt50 fwb">正在处理，请稍后！</p>');
+
+            $.post('liuyan.php', { os: os, banben: banben, userName: userName, userMail: userMail, userTel: userTel, verify: verify, company: company, job: job, ly_type: 'xiazai' }, function(data) {
+
+                console.log(data);
+
+                $('.xiazaiInfoContentForm').html('<p class="fs20 pt50 fwb">感谢您对Navicat中文版的支持！</p><p class="pt10 fs16">我们会尽快为您回复。</p>');
+
+            });
+
+        } else {
+
+            alert('验证码错误！！！')
+
+            getFocus('verify');
+
+        }
+
+
+
+    });
+
+
+
+}
+
+
+
+
+
+function sendGoumaiInfo() {
+
+    var banben = $('.products').filter('.active').attr('lang');
+
+    var number = $('#selNum').val();
+
+    var company = $.trim($('#company').val());
+
+    var userName = $.trim($('#userName').val());
+
+    var userTel = $.trim($('#userTel').val());
+
+    var userMail = $.trim($('#userMail').val());
+
+    var userHobby = $.trim($('#userHobby').val());
+
+    var yzm = $.trim($('#yzm').val());
+
+    var code = getCookie('yzm');
+
+    yzm = yzm.toLocaleLowerCase();
+
+
+
+    if (!CheckData2("公司名称", company, "pname", true)) {
+
+        getFocus('gongsiName');
+
+        return false;
+
+    }
+
+
+
+    if (!CheckData2("联系人", userName, "pname", true)) {
+
+        getFocus('username');
+
+        return false;
+
+    }
+
+
+
+    if (!CheckData2("手机号码", userTel, "phone", true)) {
+
+        getFocus('tel');
+
+        return false;
+
+    }
+
+
+
+    if (!CheckData2("电子邮箱", userMail, "email", true)) {
+
+        getFocus('regmail');
+
+        return false;
+
+    }
+
+
+
+    if (!CheckData2("需求描述", userHobby, "pname", false)) {
+
+        getFocus('miaoshu');
+
+        return false;
+
+    }
+
+
+
+    if (yzm != code) {
+
+        alert('验证码错误！');
+
+        getFocus('yzm');
+
+        return false;
+
+    }
+
+
+
+    layer.load();
+
+
+
+    $.post('liuyan.php', { banben: banben, number: number, userName: userName, userTel: userTel, userMail: userMail, company: company, userHobby: userHobby, yzm: yzm, ly_type: 'xuqiu' }, function(data) {
+
+        console.log(data);
+
+        layer.closeAll();
+
+        layer.msg('感谢您对CorelDRAW的支持！<br>我们会尽快为您回复。', { icon: 1 });
+
+        window.location.reload();
+
+    });
+
+}
+
+
+
+
+
+
+
+/*公共js代码 begin*/
+
+function searchUrl() {
+
+    var reg = /^(\s*)$/g;
+
+    if (reg.test(document.getElementById("searchValueId").value))
+
+        var res = '\'\'';
+
+    else
+
+        res = document.getElementById("searchValueId").value;
+
+    window.location.href = 'http://' + location.hostname + '/Tag/' + res;
+
+}
+
+
+
+function searchUrl2() {
+
+    var reg = /^(\s*)$/g;
+
+    if (reg.test(document.getElementById("searchSupport").value))
+
+        var res = '\'\'';
+
+    else
+
+        res = document.getElementById("searchSupport").value;
+
+    window.location.href = 'http://' + location.hostname + '/Tag/' + res;
+
+
+
+}
+
+
+
+function addCookie(objName, objValue, objHours) { //添加cookie
+
+    var str = objName + "=" + escape(objValue);
+
+    if (objHours > 0) { //为时不设定过期时间，浏览器关闭时cookie自动消失
+
+        var date = new Date();
+
+        var ms = objHours * 3600 * 1000;
+
+        date.setTime(date.getTime() + ms);
+
+        str += "; expires=" + date.toGMTString();
+
+    }
+
+    document.cookie = str;
+
+}
+
+
+
+function getCookie(objName) { //获取指定名称的cookie的值
+
+    var arrStr = document.cookie.split("; ");
+
+    for (var i = 0; i < arrStr.length; i++) {
+
+        var temp = arrStr[i].split("=");
+
+        if (temp[0] == objName)
+
+            return unescape(temp[1]);
+
+    }
+
+}
+
+
+
+function CheckData(strTitle, strInput, strType, blNeed) //js正则判断
+
+{
+
+    switch (strType)
+
+    {
+
+        case "pname":
+
+            var pattern = /^.{2,200}$/;
+
+            var msg = "\n\n格式要求: 2-200个字符    ";
+
+            break;
+
+        case "email":
+
+            var pattern = /^[a-zA-Z0-9_\-\.]+@([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,5}$/;
+
+            var msg = "";
+
+            if (strInput != "")
+
+            {
+
+                var msg = "\n\n- 您填写的电子邮箱是 " + strInput;
+
+                msg += "   \n\n- 请仔细核对拼写是否正确。  ";
+
+            } else
+
+            {
+
+                var msg = "\n\n- 电子邮箱不能为空！";
+
+            }
+
+            break;
+
+        case "telnum":
+
+            var pattern = /^1[0-9]{10}$|^106[0-9]{9,12}$/;
+
+            var msg = "";
+
+            break;
+
+        case "postcode":
+
+            var pattern = /^[0-9]{6}$/;
+
+            var msg = "\n\n格式要求: 6位数字    ";
+
+            break;
+
+        case "number":
+
+            var pattern = /^[1-9]{1}[0-9]{0,4}$/;
+
+            var msg = "\n\n格式要求: 数字    ";
+
+            break;
+
+        case "tax_account":
+
+            var pattern = /^[\w]{10,20}$/;
+
+            var msg = "\n\n格式要求: 20位以内字母数字    ";
+
+            break;
+
+    }
+
+
+
+    strInput = strInput.replace(/(^\s*)|(\s*$)/g, "");
+
+    if ((strInput == "") && blNeed)
+
+    {
+
+        alert("请您填写" + strTitle + "。  " + msg);
+
+        return false;
+
+    }
+
+
+
+    if (strInput != "")
+
+    {
+
+        var result = strInput.match(pattern);
+
+        if (result == null)
+
+        {
+
+            alert("请您填写有效的" + strTitle + "。  " + msg);
+
+            return false;
+
+        }
+
+    }
+
+    return true;
+
+}
+
+
+
+function jsaction() //表单验证
+
+{
+
+    //if($('#hk')[0].checked != true) {
+
+    /*if (!CheckData("注册数量",document.getElementById('ordernum').value,"number",true))
+
+     {
+
+     getFocus('ordernum');
+
+     return false;
+
+     }
+
+
+
+     if (!CheckData("注册姓名",document.getElementById('regname').value,"pname",true))
+
+     {
+
+     getFocus('regname');
+
+     return false;
+
+     }*/
+
+
+
+    if (!CheckData("电子邮箱", document.getElementById('regmail').value, "email", true))
+
+    {
+
+        getFocus('regmail');
+
+        return false;
+
+    }
+
+
+
+    /*if (document.getElementById('nomail').checked)
+
+     {
+
+     if (!CheckData("手机号码",document.getElementById('usertelnum').value,"telnum",true))
+
+     {
+
+     getFocus('usertelnum');
+
+     return false;
+
+     }
+
+     }*/
+
+
+
+    /*if (document.getElementById('getbill').checked || document.getElementById('getcd').checked)
+
+     {
+
+     if (document.getElementById('getbill').checked)
+
+     {
+
+     if (document.getElementById('invoicehead').value == "")
+
+     {
+
+     alert ("请填写发票抬头。");
+
+     getFocus('invoicehead');
+
+     return false;
+
+     }
+
+     }*/
+
+
+
+    if (!CheckData("真实姓名", document.getElementById('username').value, "pname", true)) {
+
+
+
+        getFocus('username');
+
+        return false;
+
+    }
+
+
+
+    if (document.getElementById('tel').value == "") //  && $('.chkHZ')[0].checked == true)
+
+    {
+
+        alert("请填写您的手机号码。");
+
+        getFocus('tel');
+
+        return false;
+
+    } else {
+
+        if (!CheckData2('手机号码', document.getElementById('tel').value, 'phone', true))
+
+            return false;
+
+    }
+
+
+
+    if (document.getElementById('add').value == "" && $('.chkHZ')[0].checked == true)
+
+    {
+
+        alert("请填写您的联系地址。");
+
+        getFocus('add');
+
+        return false;
+
+    }
+
+
+
+    /*if (!CheckData("邮政编码",document.getElementById('post').value,"postcode",true))
+
+     {
+
+     getFocus('post');
+
+     return false;
+
+     }*/
+
+    //}
+
+    //}
+
+
+
+}
+
+
+
+function CheckData2(strTitle, strInput, strType, blNeed) //js正则判断
+
+{
+
+    switch (strType)
+
+    {
+
+        case "pname":
+
+            var pattern = /^.{2,200}$/;
+
+            var msg = "\n\n格式要求: 2-200个字符    ";
+
+            break;
+
+        case "email":
+
+            var pattern = /^[a-zA-Z0-9_\-\.]+@([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,5}$/;
+
+            var msg = "";
+
+            if (strInput != "")
+
+            {
+
+                var msg = "\n\n- 您填写的电子邮箱是 " + strInput;
+
+                msg += "   \n\n- 请仔细核对拼写是否正确。  ";
+
+            } else
+
+            {
+
+                var msg = "\n\n- 电子邮箱不能为空！";
+
+            }
+
+            break;
+
+        case "msn":
+
+            var pattern = /^[a-zA-Z0-9_\-\.]+@([a-zA-Z0-9\-]+\.)+[a-zA-Z]{2,5}$/;
+
+            var msg = "";
+
+            if (strInput != "")
+
+            {
+
+                var msg = "\n\n- 您填写的MSN是 " + strInput;
+
+                msg += "   \n\n- 请仔细核对拼写是否正确。  ";
+
+            }
+
+            break;
+
+        case "phone":
+
+            var pattern = /^1[0-9]{10}$|^106[0-9]{9,12}$/;
+
+            var msg = "\n\n格式如下：138********";
+
+            break;
+
+        case "tel":
+
+            var pattern = /^[0-9]{3,4}-[0-9]{7,8}$/;
+
+            var msg = "\n\n格式如下：000-0000000/0000-00000000";
+
+            break;
+
+        case "postcode":
+
+            var pattern = /^[0-9]{6}$/;
+
+            var msg = "\n\n格式要求: 6位数字    ";
+
+            break;
+
+        case "qq":
+
+            var pattern = /^[1-9][0-9]{4,11}$/;
+
+            var msg = "\n\n格式要求：5位或12位数字";
+
+            break;
+
+    }
+
+
+
+    strInput = strInput.replace(/(^\s*)|(\s*$)/g, "");
+
+    if ((strInput == "") && blNeed)
+
+    {
+
+        alert("请您填写" + strTitle + "。  " + msg);
+
+        return false;
+
+    }
+
+
+
+    if (strInput != "")
+
+    {
+
+        var result = strInput.match(pattern);
+
+        if (result == null)
+
+        {
+
+            alert("请您填写有效的" + strTitle + "。  " + msg);
+
+            return false;
+
+        }
+
+    }
+
+    return true;
+
+}
+
+
+
+function jsaction2()
+
+{
+
+
+
+    if (!CheckData2("真实姓名", document.getElementById('trueName').value, "pname", true)) {
+
+        getFocus('trueName');
+
+        return false;
+
+    }
+
+
+
+    if (!CheckData2("手机号码", document.getElementById('mobile').value, "phone", true)) {
+
+        getFocus('mobile');
+
+        return false;
+
+    }
+
+
+
+    if ($('#chequeFront').val() != undefined && !CheckData2("发票抬头", $('#chequeFront').val(), "pname", true)) {
+
+        getFocus('chequeFront');
+
+        return false;
+
+    }
+
+    if ($('#invoice_tax_account').val() != undefined && !CheckData2("纳税人识别号", $('#invoice_tax_account').val(), "pname", true)) {
+
+        getFocus('invoice_tax_account');
+
+        return false;
+
+    }
+
+    if ($('#invoice_aaddress').val() != undefined && !CheckData2("注册地址", $('#invoice_aaddress').val(), "pname", true)) {
+
+        getFocus('invoice_aaddress');
+
+        return false;
+
+    }
+
+    if ($('#invoice_tel').val() != undefined && !CheckData2("注册电话", $('#invoice_tel').val(), "pname", true)) {
+
+        getFocus('invoice_tel');
+
+        return false;
+
+    }
+
+    if ($('#invoice_open_bank').val() != undefined && !CheckData2("开户银行", $('#invoice_open_bank').val(), "pname", true)) {
+
+        getFocus('invoice_open_bank');
+
+        return false;
+
+    }
+
+    if ($('#invoice_open_account').val() != undefined && !CheckData2("开户账号", $('#invoice_open_account').val(), "pname", true)) {
+
+        getFocus('invoice_open_account');
+
+        return false;
+
+    }
+
+}
+
+
+
+function getFocus(thisId) //得到焦点
+
+{
+
+    document.getElementById(thisId).focus();
+
+}
+
+
+
+function showWhichOrder(getid) //选择哪种支付方式
+
+{
+
+    if ('wy' == getid)
+
+    {
+
+        document.getElementById('orderForm').action = './pay/bank.php';
+
+
+
+    } else if ('zfb' == getid)
+
+    {
+
+        document.getElementById('orderForm').action = './pay/alipay.php';
+
+    } else if ('wx' == getid)
+
+    {
+
+        document.getElementById('orderForm').action = './pay/weixin.php';
+
+    } else if ('hdfk' == getid)
+
+    {
+
+        document.getElementById('orderForm').action = 'huodaofukuan.html';
+
+
+
+    } else
+
+    {
+
+        document.getElementById('orderForm').action = 'huikuan.html';
+
+
+
+    }
+
+}
+
+
+
+/*公共js代码 end*/�eQE�      ^��^��A�<�^��   A    :https://www.formysql.com/WebDir/formysql/js/main.js?t=1592123906 necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 14 Jun 2020 08:38:27 GMT
+Content-Type: application/javascript
+Content-Length: 29925
+Last-Modified: Fri, 17 Jan 2020 02:59:56 GMT
+ETag: "5e21232c-74e5"
+Expires: Sun, 14 Jun 2020 09:38:27 GMT
+Cache-Control: max-age=3600
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+ original-response-headers Server: nginx
+Date: Sun, 14 Jun 2020 08:38:27 GMT
+Content-Type: application/javascript
+Content-Length: 29925
+Last-Modified: Fri, 17 Jan 2020 02:59:56 GMT
+Connection: keep-alive
+ETag: "5e21232c-74e5"
+Expires: Sun, 14 Jun 2020 09:38:27 GMT
+Cache-Control: max-age=3600
+X-Frame-Options: SAMEORIGIN
+Accept-Ranges: bytes
+ uncompressed-len 0 net-response-time-onstart 84 net-response-time-onstop 129   t�

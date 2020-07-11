@@ -1,0 +1,113 @@
+sudo snap install pycharm-professional --classic
+snap changrs
+snap changes
+sudo snap abort2
+sudo snap abort 2
+sudo snap install pycharm-professional --classic
+ls
+git
+sudo apt-get install git
+git
+git config --global user.name "sjt"
+git config --global user.email "2726333427@qq.com"
+ssh -keygen -C '2726333427@qq.com' -t rsa 
+ssh-keygen -C '2726333427@qq.com' -t rsa 
+cd ~/.ssh
+gedit id_rsa.pub 
+ssh -T git@git.oschina.net
+gedit id_rsa.pub 
+ssh -T git@git.oschina.net
+git config --list
+git init
+git init test
+ls
+cd test/
+ls
+cd ..
+git rm test -r -f
+git rm test -r 
+git rm test 
+rm test
+cd ..
+ls
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.1-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.1-1_all.deb
+sudo apt-get update
+sudo apt-get install mysql-server
+sudo mysql_secure_installation
+systemctl status mysql.service
+mysqladmin -p -u root version
+ls
+cd PycharmProjects/
+LS
+lS
+cd ..
+cd /mnt/hdfs
+ls
+cd /mnt
+ls
+cd hgfs/
+ls
+cd ..
+sudo apt-get install python3.7
+python
+python3
+sudo add-apt-repository ppa:jonathonf/python-3.7
+sudo apt-get update
+sudo apt-get install python3.7
+python3-V
+python3 -V
+cd /mnt/hgfs/
+ls
+cd ..
+ls
+cd home
+ls
+cd sjt/
+ls
+sudo apt-get install rar
+ls
+rar x chinafyl-adminycj-master.rar 
+ls
+sudo apt-get install python3.7
+sudo apt-get install software-properties-common python-software-properties
+sudo add-apt-repository ppa:jonathonf/python-3.7
+sudo apt-get update
+sudo apt-get install python3.7
+cd /etc/apt
+ls
+vim sources.list
+sudo apt install vim
+vim sources.list
+ls
+python3 manager.py db upgrade 
+pip3 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+yum install python-devel
+sudo apt install yum
+yum install python-devel
+sudo yum install python-devel
+sudo apt-get install python-devel
+sudo apt-get install python-dev
+pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+pip3 install numpy==1.8.1 -i  https://mirrors.aliyun.com/pypi/simple/
+sudo apt-get install python-devel
+sudo apt-get install python-dev
+pip3 install numpy==1.8.1 -i  https://mirrors.aliyun.com/pypi/simple/
+apt-get install build-essential python-dev
+sudo apt-get install build-essential python-dev
+sudo apt-get install build-essential python-devel
+pip3 install numpy==1.8.1 -i  https://mirrors.aliyun.com/pypi/simple/
+pip3 install numpy==1.8.1 
+sudo apt-get update
+pip3 install pandas==1.0.1
+pip3 install pandas
+pip3 install numpy
+pip3 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+yum install python-devel
+root
+sudo
+sudo root
+su -root
+sudo passwd root
+su

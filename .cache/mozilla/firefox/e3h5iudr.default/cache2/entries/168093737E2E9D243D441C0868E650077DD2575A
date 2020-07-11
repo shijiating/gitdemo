@@ -1,0 +1,603 @@
+jbMap = window.jbMap || {};
+function jbViaJs(locationId) {
+    var _f = undefined;
+    var _fconv = 'jbMap[\"' + locationId + '\"]';
+    try {
+        _f = eval(_fconv);
+        if (_f != undefined) {
+            _f()
+        }
+    } catch(e) {}
+}
+function jbLoader(closetag) {
+    var jbTest = null,
+    jbTestPos = document.getElementsByTagName("span");
+    for (var i = 0; i < jbTestPos.length; i++) {
+        if (jbTestPos[i].className == "jbTestPos") {
+            jbTest = jbTestPos[i];
+            break
+        }
+    }
+    if (jbTest == null) return;
+    if (!closetag) {
+        document.write("<span id=jbTestPos_" + jbTest.id + " style=display:none>");
+        jbViaJs(jbTest.id);
+        return
+    }
+    document.write("</span>");
+    var real = document.getElementById("jbTestPos_" + jbTest.id);
+    for (var i = 0; i < real.childNodes.length; i++) {
+        var node = real.childNodes[i];
+        if (node.tagName == "SCRIPT" && /closetag/.test(node.className)) continue;
+        jbTest.parentNode.insertBefore(node, jbTest);
+        i--
+    }
+    jbTest.parentNode.removeChild(jbTest);
+    real.parentNode.removeChild(real)
+}
+
+var pathName = window.document.location.pathname;
+var projectName = pathName.substring(1, pathName.substr(1).indexOf('/') + 1);
+
+var logo_m='<a href="http://www.jhlengku.com/" target="_blank"><img src="//files.jb51.net/image/dkwm430.gif?0723" width=430 height=60 /></a>';
+var logo_r='<a href="http://www.ku86.com/" target="_blank"><img src="http://files.jb51.net/image/kuyun_370.gif" width=430 height=60 /></a>';
+
+var aliyun1000='';
+aliyun1000+='<div class="mainlr"><a href="https://www.ctyun.cn/activity/2020618?track=|cp:cz_jbzj|tgdy:nianzhongshangyunjie-120050|ttjh:tonglanguanggao|key:czkk31|pf:PC" target="_blank"><img src="//files.jb51.net/image/ctyun1200.gif?0611" alt="" width="1200" height="50"><span><img src="//files.jb51.net/image/tu.jpg" width="29" height="16" alt=""></span></a></div><div class="blank5"></div>';
+aliyun1000+='<div class="mainlr"><a href="http://wpa.qq.com/msgrd?v=3&uin=1166090&site=qq&menu=yes" target="_blank"><img src="//files.jb51.net/image/1166090.gif?2006112" alt="" width="1200" height="50"><span><img src="//files.jb51.net/image/tu.jpg" width="29" height="16" alt=""></span></a></div><div class="blank5"></div>';
+aliyun1000+='<div class="mainlr"><a href="http://www.huokesoft.com/" target="_blank"><img src="//files.jb51.net/image/huoke.png?200322" alt="" width="1200" height="50"><span><img src="//files.jb51.net/image/tu.jpg" width="29" height="16" alt=""></span></a></div><div class="blank5"></div>';
+aliyun1000+='<div class="mainlr"><a href="http://wpa.qq.com/msgrd?v=3&uin=899865&site=qq&menu=yes" target="_blank"><img src="//files.jb51.net/image/899865.jpg?0304" alt="" width="1200" height="50"><span><img src="//files.jb51.net/image/tu.jpg" width="29" height="16" alt=""></span></a></div><div class="blank5"></div>';
+
+var aliyun10002='<div class="blank5"></div>';
+aliyun10002+='<div class="mainlr"><a href="http://bb.rerezy10.com/help/" target="_blank"><img src="//files.jb51.net/image/rerezy.png?1105" alt="aliyun"><span><img src="//files.jb51.net/image/tu.jpg" width="29" height="16" alt=""></span></a></div><div class="blank5"></div>';
+aliyun10002+='<div class="mainlr"><a href="http://mgtvzy2.com/" target="_blank"><img src="//files.jb51.net/image/mgtvzy1200.gif" alt="aliyun"><span><img src="//files.jb51.net/image/tu.jpg" width="29" height="16" alt=""></span></a></div><div class="blank5"></div>';
+
+var idctu="";
+//idctu+='<scr'+'ipt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scr'+'ipt><!--thea+300*250--><ins class="adsbygoogle"style="display:inline-block;width:300px;height:250px"data-ad-client="ca-pub-6389290466807248"data-ad-slot="6788945816"></ins><scr'+'ipt>(adsbygoogle=window.adsbygoogle||[]).push({});</scr'+'ipt>';
+idctu+='<scrip'+'t async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- content_r2 --><ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="6500564943"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</scr'+'ipt>';
+idctu+='<div class="blank5"></div><A href="https://www.henghost.com/?jbzj" target="_blank"><IMG alt="" src="//files.jb51.net/image/henghost300.gif?0228" width="300" height="100"></A>';
+idctu+='<div class="blank5"></div><A href="https://www.50vm.com/server.html?pg=34" target="_blank"><IMG alt="" src="//files.jb51.net/image/99idc300.jpg" width="300" height="100"></A>';
+
+var aliwenzi='<li><a href="http://click.aliyun.com/m/15321/" target="_blank"><span style="color:red;">30Óà¿î°¢ÀïÔÆ²úÆ·Ãâ·Ñ6¸öÔÂ</span></a></li>';
+var ali237='<li><A href="http://click.aliyun.com/m/28331/" target="_blank"><IMG alt="" src="//files.jb51.net/image/ali2650323.gif" width="211" height="50"></A></li>';
+var ali2371='<li><A href="http://click.aliyun.com/m/17168/" target="_blank"><IMG alt="" src="//files.jb51.net/image/ali2371.jpg" width="211" height="50"></A></li>';
+
+var tgtxt="";
+tgtxt+='<div id="txtlink"><ul>';
+
+tgtxt+='<li><a href="https://shimo.im/docs/TAbDojU92mAHPuR8/read" target="_blank"><span style="color:blue;">½­ËÕ³±·þ+ÆÎÌï³±Ð¬</span></a></li>';
+tgtxt+='<li><a href="http://www.uujs.cc/" target="_blank"><span style="color:blue;">Ãâ·ÑÍøÕ¾È«Çò¼ÓËÙºÍ·ÀÓù[ÓÅÓÅ¼ÓËÙ]</span></a></li>';
+tgtxt+='<li><a href="https://www.ctyun.cn/activity/2020517?track=|cp:cz_jbzj|tgdy:517-120050|ttjh:tonglanguanggao|key:czkk22|pf:pc" target="_blank"><span style="color:blue;">¡¾ÌìÒíÔÆ¡¿ÔÆÖ÷»ú±¬¿îîÒ»Ý£¬µÍÖÁ88Ôª/Äê£¡</span></a></li>';
+tgtxt+='<li><a href="http://www.zh.cc/us/" target="_blank"><span style="color:blue;">²»ÏÞÄÚÈÝ¡¾º£Íâ¡¿¶ÀÁ¢·þÎñÆ÷×âÓÃ</span></a></li>';
+
+tgtxt+='<li><a href="https://okzy.co/" target="_blank"><span style="color:red;">OK×ÊÔ´Õ¾Ìá¹©¸ßÇåµçÓ°²É¼¯</span></a></li>';
+tgtxt+='<li><a href="http://s.jb51.net/" target="_blank"><span style="color:red;">·þÎñÆ÷³£ÓÃÈí¼þ</span></a></li>';
+tgtxt+='<li><a href="http://www.zoneidc.com/" target="_blank"><span style="color:red;">Ïã¸Û/ÃÀ¹ú/º«¹úµÈÊ®Îå¹úÔÆ·þÎñÆ÷9.9Ôª/ÔÂÆð</span></a></li>';
+tgtxt+='<li><a href="http://www.ku86.com/" target="_blank"><span style="color:red;">°ÙÕ× 12ºË24Ïß³Ì 16GÄÚ´æ 2T 999/ÔÂ</span></a></li>';
+
+tgtxt+='<li><a href="https://www.henghost.com/?jbzj" target="_blank"><span style="color:blue;">¨€¨€ºã´´¿Æ¼¼¨€¨€¡ôÏã¸Û·þÎñÆ÷¡¤CN2¼«ËÙÎÈ¶¨¡ô</span></a></li>';
+tgtxt+='<li><a href="http://www.gwidc.com/rent/home/index.html" target="_blank"><span style="color:blue;">¸ÛÍåÍøÂçÐìÖÝ°Ù¶À800/ÔÂ,100G¸ß·ÀÔÆ150</span></a></li>';
+tgtxt+='<li><a href="http://www.hostspaceidc.com/front/products/datacenter?from=jb51-pic" target="_blank"><span style="color:blue;">º£Íâ´ó´ø¿í Õ¾Èº ¸ß·À·þÎñÆ÷</span></a></li>';
+tgtxt+='<li><a href="http://tianyi.jb51.net/" target="_blank"><span style="color:blue;">ÌìÒíÔÆ£¬ÔÆÖ÷»ú£¬ÔÆ´æ´¢£¬ÔÆ°²È«</span></a></li>';
+
+
+tgtxt+='<li><a href="https://www.wsisp.net/clientcenter/shownews_852.html?indexjb" target="_blank"><span style="color:blue;">¨€¨~¨}5M¶ÀÏíÔÆÖ÷»ú599/Äê¨}¨~¨€</span></a></li>';
+tgtxt+='<li><a href="http://www.qy.com.cn/" target="_blank"><span style="color:blue;">ÈºÓ¢ÔÆ·þÎñÆ÷ËÍ10M´ø¿í30G·ÀÓù,49ÔªÆð</span></a></li>';
+tgtxt+='<li><a href="http://www.tuidc.com/" target="_blank"><span style="color:blue;">·þÎñÆ÷×âÓÃ/ÍÐ¹Ü-ÓòÃû¿Õ¼ä/ÈÏ×¼ÌÚÓÓ¿Æ¼¼</span></a></li>';
+tgtxt+='<li><a href="http://www.vzidc.com/cloud/" target="_blank"><span style="color:blue;">»ªÎªÔÆ4ºË8gÏÞÊ±Ãâ·ÑËÍÁíÓÐ´ú½ðÈ¯Ãâ·ÑËÍ</span></a></li>';
+
+tgtxt+='<li><a href="http://www.ushk.net/server.html" target="_blank"><span style="color:red;">¨€¨€ÃÀ¸ÛÊý¾Ý¨€¨€¸ß¶ËÏã¸Û·þÎñÆ÷×âÓÃ</span></a></li>';
+tgtxt+='<li><a href="http://vps.zzidc.com/tongji/jb51w.html" target="_blank"><span style="color:red;">¡ï¡îÔÆ·þÎñÆ÷5ÕÛ£¬ÌìÌì³éºì°üµÖ¿Û¡î¡ï</span></a></li>';
+tgtxt+='<li><a href="https://www.tzidc.com/dist/highDefense.html#jb51" target="_blank"><span style="color:red;">¨€¨€¸ß·Àip¨€¨€¸ß·À·þÎñÆ÷×âÓÃ</span></a></li>';
+tgtxt+='<li><a href="https://www.dzisp.cn/" target="_blank"><span style="color:red;">³É¶¼|µÂÑô|µçÐÅ100G¸ß·À24ºËÎïÀí»ú500Ôª</span></a></li>';
+
+tgtxt+='<li><a href="http://www.pppoevps.com/" target="_blank"><span style="color:blue;">¨€¶¯Ì¬²¦ºÅIPÔÆÖ÷»ú£¬µçÐÅADSL¶ÀÏí20M¨€ </span></a></li>';
+tgtxt+='<li><a href="http://www.360jq.com/hkshuang.htm" target="_blank"><span style="color:blue;">[Ïã¸ÛË«¸ß·À]ÎÞÊÓCC¡ïDDOS/¿°±È¹ã¶«£¡</span></a></li>';
+tgtxt+='<li><a href="http://www.cyidc.cc/" target="_blank"><span style="color:blue;">³©ÓÎÍøÂç °Ù¶À·þÎñÆ÷ °üÅÜÂú 998Ôª</span></a></li>';
+tgtxt+='<li><a href="http://www.wdw6.com/" target="_blank"><span style="color:blue;">bgp¶àÏß»ú·¿¡¢´ó´ø¿í</span></a></li>';
+
+tgtxt+='<li><a href="http://www.ssf.cc/" target="_blank"><span style="color:red;">Ãâ±¸vps20/°Ù¶À799/Ë«Ïß350/45»¥Áª</span></a></li>';
+tgtxt+='<li><a href="http://www.zitian.cn/" target="_blank"><span style="color:red;">ÖÐÔ­µØÇøºËÐÄÊý¾ÝÖÐÐÄ£¬ÔÂ¸¶299ÔªÆð</span></a></li>';
+tgtxt+='<li><a href="http://www.qy.cn/gfhd.html" target="_blank"><span style="color:red;">¨€¨€ÈºÓ¢ÍøÂç¨€¨€¡ô¡ô¡ô300G¸ß·À½öÐè599Ôª¡ô¡ô¡ô</span></a></li>';
+tgtxt+='<li><a href="https://www.jb51.net/os/win10/698746.html" target="_blank"><span style="color:red;">Õý°æWindows 10 ¼ÒÍ¥/×¨Òµ°æ ÐÂÄêÌØ¼Û 248</span></a></li>';
+
+tgtxt+='<li><a href="https://www.beianidc.com/huodong/" target="_blank"><span style="color:blue;">¨€¨€»ú·¿Ö±Ïú¨€¨€Ã¿ÔÂ°ë¼ÛÇÀ¹º</span></a></li>';
+tgtxt+='<li><a href="http://www.hkcn2.com/51.htm" target="_blank"><span style="color:blue;">**Ïã¸Û¸ß·À10m´ó´ø¿í¶À·þ£¬µÍÖÁ999Ôª**</span></a></li>';
+tgtxt+='<li><a href="http://www.xiaozhiyun.com/2016/" target="_blank"><span style="color:blue;">º«¹úÏã¸ÛÃÀ¹úÕ¾Èº·þÎñÆ÷ ¾ÞÅ£ÍøÂç</span></a></li>';
+tgtxt+='<li><a href="http://bb.rerezy10.com/help/" target="_blank"><span style="color:blue;">ÈÈÈÈ×ÊÔ´¡¢ÎÈ¶¨¸üÐÂ¡¢²É¼¯ËÍÇ®</span></a></li>';
+
+tgtxt+='</ul><DIV class=clearfix></DIV></div><div class="blank5"></div>';
+
+var tonglan1="";
+tonglan1+=aliyun1000;
+tonglan1+=tgtxt;
+tonglan1+='<div class="topimg"><ul>';
+tonglan1+='<li><A href="https://www.ruixunidc.net/a/youhuihuodong/" target="_blank"><IMG alt="" src="//files.jb51.net/image/ruixun235.gif?0102"  width="235" height="50"></a></li>';
+tonglan1+='<li><A href="https://www.leidianip.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/leidian_235.gif" width="235" height="50"></a></li>';
+//tonglan1+='<li><A href="https://www.ctyun.cn/activity/2020517?track=|cp:cz_jbzj|tgdy:517-120050|ttjh:tonglanguanggao|key:czkk22|pf:pc" target="_blank"><IMG alt="" src="//files.jb51.net/image/ctyun235.gif"  width="235" height="50"></a></li>';
+tonglan1+='<li><A href="https://www.7e.hk/act/sale/" target="_blank"><IMG alt="" src="//files.jb51.net/image/7ehk235.gif?0611"  width="235" height="50"></A></li>';
+//tonglan1+='<li><A href="http://www.zun.com/qiang.html" target="_blank"><IMG alt="×ðÔÆ" src="//files.jb51.net/image/zun.png" width="235" height="50"></A></li>';
+//tonglan1+='<li><A href="http://www.cnzlapp.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/cnzlapp210.gif" width="235" height="50"></A></li>';
+tonglan1+='<li><A href="https://nxnprbl.cn/" target="_blank"><IMG alt="" src="//files.jb51.net/image/1529668.gif?0608" width="235" height="50"></A></li>';
+tonglan1+='<li><A href="https://www.8a.hk/server/" target="_blank"><IMG alt="" src="//files.jb51.net/image/8a210.gif" width="235" height="50"></A></li>';
+
+//tonglan1+='<li><A href="https://jieidc.taobao.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/jieidc_237.gif?0327" width="210" height="50"></A></li>';
+tonglan1+='</ul></div>';
+tonglan1+=aliyun10002;
+
+var tonglan1_2="";
+tonglan1_2+=aliyun1000;
+tonglan1_2+=tgtxt;
+tonglan1_2+='<div class="blank5"></div>';
+tonglan1_2+='<div class="topimg"><ul>';
+tonglan1_2+='<li><A href="http://t.cn/E9OUxEx" target="_blank"><IMG alt="" src="//files.jb51.net/image/tb_210_50.gif?1008" width="265" height="50"></A></li>';
+tonglan1_2+='<li><A href="https://jieidc.taobao.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/jieidc_237.gif?0327" width="210" height="50"></A></li>';
+//tonglan1_2+=ali237;
+tonglan1_2+='<li><A href="http://www.ku86.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/ku86_237.gif?1010" width="210" height="50"></A></li>';
+tonglan1_2+='<li><A href="http://www.wsisp.com" target="_blank"><IMG alt="" src="//files.jb51.net/image/wsisp23701051.gif?0611" width="265" height="50"></A></li>';
+tonglan1_2+='</ul></div><div class="blank5"></div>';
+
+var tonglan2='';
+var tonglan2_1='<a href="https://www.jb51.net/s/idc/" alt="¸ß·À·þÎñÆ÷" target="_blank"><img src="//files.jb51.net/image/bgp_jb51.gif" width="1080" height="50" border="0" /></a>';
+var tonglan2_2='<a href="http://www.tuidc.com" alt="ÌÚÓÓ" target="_blank"><img src="//files.jb51.net/image/tuidc1080.gif?0516" width="1080" height="50" border="0" /></a>';
+
+
+var tonglan3_1='<div class="mainlr"><a href="https://www.qy.cn/free/?f=jb51" target="_blank"><img src="//files.jb51.net/image/qy1080.gif?0313" width="1200" height="50"></a></div><div class="blank5"></div>';
+
+var tonglan3_2='<div class="topimg"><ul>';
+tonglan3_2+='<li><A href="https://jieidc.taobao.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/jieidc_237.gif?0327" width="210" height="50"></A></li>';
+tonglan3_2+='<li><A href="https://www.yiyangidc.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/yy235.gif" width="210" height="50"></A></li>';
+//tonglan3_2+='<li><A href="http://www.enkj.com/gfcloud/" target="_blank"><IMG alt="" src="//files.jb51.net/image/enkj0810.gif" alt="ÔÆ·þÎñÆ÷" width="210" height="50"></A></li>';
+tonglan3_2+='<li><A href="http://www.cnzlapp.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/cnzlapp210.gif" width="235" height="50"></A></li>';
+tonglan3_2+='<li><A href="http://www.cyidc.cc/" target="_blank"><IMG alt="" src="//files.jb51.net/image/cyidc237.gif" width="210" height="50"></A></li>';
+tonglan3_2+='<li><A href="https://www.wsisp.net/clientcenter/shownews_852.html?indexjb" target="_blank"><IMG alt="" src="//files.jb51.net/image/wsisp210.gif?1226" width="210" height="50"></a></li>';
+tonglan3_2+='</ul></div>';
+
+var tonglan3_3='<div class="mainlr"><a href="http://www.qy.com.cn" target="_blank"><img src="//files.jb51.net/image/qy_1000.gif" width="1200" height="50"></a></div><div class="blank5"></div>';
+
+var botad='<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>';
+botad+='<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="6445926239" data-override-format="true" data-page-url="http://www.jb51.net"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>';
+//u2261513
+var bd200='<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/hod9xqa8sj.js"></sc'+'ript>';
+
+var zbafer ='<div class="r300 clearfix">'; 
+zbafer +='<div class="blank5"></div><A href="http://www.hostspaceidc.com/?from=jb51-pic" target="_blank"><IMG alt="" src="//files.jb51.net/image/hsidc300.gif?0507" width="300" height="100"></A>';
+//zbafer +='<div class="blank5"></div><A href="https://www.ucloud.cn/site/global.html?ytag=jb51" target="_blank"><IMG alt="" src="//files.jb51.net/image/ucloud300.png" width="300" height="100"></A>';
+zbafer +='<div class="blank5"></div><A href="https://www.leidianip.com/" target="_blank"><IMG alt="" src="//files.jb51.net/image/leidian_300.gif" width="300" height="100"></A>';
+
+if($('.sidebox-recomm')){$('.sidebox-recomm').after(zbafer);}
+
+var idctu1='<div class="idc3"><a href="http://tools.jb51.net" target="_blank"><h1>ÔÚÏß¹¤¾ß</h1><span>´úÂë¸ñÊ½»¯µÈ</span> </a><a href="https://www.jb51.net/s/idc/" target="_blank"><h1>¸ß·ÀÖ÷»ú</h1><span>600G ·À»¤</span> </a><a href="http://www.33ip.com" target="_blank"><h1>·ãÐÅ¿Æ¼¼</h1><span>IDC·þÎñÉÌ</span> </a></div>';
+var idctu2='<a href="http://www.tuidc.com/baidu/Promotion_20191111.html" target="_blank"><img src="//files.jb51.net/image/tengyou300.gif?1209" width="300" height="100"></a>';
+//idctu2+='<div class="blank5"></div><a href="http://www.enkj.com/encloud/" target="_blank"><img src="//files.jb51.net/image/enkj300.gif?0319" alt="ÔÆ·þÎñÆ÷" width="300" height="100"></a>';
+idctu2+='<div class="blank5"></div><a href="https://www.yiyangidc.com/" target="_blank"><img src="//files.jb51.net/image/yyqz300.gif" alt="·þÎñÆ÷" width="300" height="100"></a>';
+
+//if (projectName=='article'){idctu2=bd200+'<div class="blank5"></div>'+idctu2;}
+
+/*******---------ÔÚÏß¹¤¾ßstart----------********/
+var bctools='<li><a href="http://tools.jb51.net/code/css" target="_blank"><font color="red">CSS´úÂë¹¤¾ß</font></a></li>';
+bctools+='<li><a href="http://tools.jb51.net/code/js" target="_blank"><font color="red">JavaScript´úÂë¸ñÊ½»¯¹¤¾ß</font></a></li>';
+bctools+='<li><a href="http://tools.jb51.net/code/xmlformat" target="_blank">ÔÚÏßXML¸ñÊ½»¯/Ñ¹Ëõ¹¤¾ß</a></li>';
+bctools+='<li><a href="http://tools.jb51.net/code/phpformat" target="_blank"><font color="red">php´úÂëÔÚÏß¸ñÊ½»¯ÃÀ»¯¹¤¾ß</font></a></li>';
+bctools+='<li><a href="http://tools.jb51.net/code/sqlcodeformat" target="_blank">sql´úÂëÔÚÏß¸ñÊ½»¯ÃÀ»¯¹¤¾ß</a></li>';
+bctools+='<li><a href="http://tools.jb51.net/transcoding/html_transcode" target="_blank">ÔÚÏßHTML×ªÒå/·´×ªÒå¹¤¾ß</a></li>';
+bctools+='<li><a href="http://tools.jb51.net/code/json" target="_blank">ÔÚÏßJSON´úÂë¼ìÑé/¼ìÑé/ÃÀ»¯/¸ñÊ½»¯</a></li>';
+bctools+='<li><a href="http://tools.jb51.net/regex/javascript" target="_blank">JavaScriptÕýÔòÔÚÏß²âÊÔ¹¤¾ß</a></li>';
+bctools+='<li><a href="http://tools.jb51.net/transcoding/jb51qrcode" target="_blank">ÔÚÏßÉú³É¶þÎ¬Âë¹¤¾ß(¼ÓÇ¿°æ)</a></li>';
+bctools+='<li><a href="http://tools.jb51.net/" target="_blank">¸ü¶àÔÚÏß¹¤¾ß</a></li>';
+/*******---------ÔÚÏß¹¤¾ßend----------********/
+
+
+//u336546
+var tonglanbd='<scr'+'ipt type="text/javascript" src="//jscode.jbzj.com/cmds5flr1.js"></scr'+'ipt>';
+
+var tonglangg='<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+tonglangg+='<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="9750602991"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+
+var tonglan_1024 = '<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+tonglan_1024+='<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6384567588307613" data-ad-slot="3250145379" data-ad-format="auto" data-full-width-responsive="true"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>'; 
+//var art_up = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/gn3a1ecf96f1ccff30db1c7481b2b03ded00b3930a3ef6.js"></s'+'cript>';
+
+//var tit_down = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/uphlhyovv.js"></s'+'cript>';
+//var tit_down = '¹Ø×¢½Å±¾Ö®¼ÒÎ¢ÐÅ¹«ÖÚºÅ(jb51net) Ã¿ÖÜ¶¼ÓÐ´óÀñÏàËÍÅ¶';
+var tit_down = ''
+var art_up_isbd=0;
+var art_upp = new Array()
+art_upp[0] = '<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="3921475131"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+art_upp[1] = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/production/n/i/production/eqhjo/openjs/oq.js"></s'+'cript>';
+//820*250
+art_upp[2] = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/production/ql/common/h/source/n/h/production/kmtr.js"></s'+'cript>';
+
+var nn =Math.round(Math.random());
+if (nn==1){art_up_isbd=1}
+var art_up = art_upp[nn];
+
+/*var art_up='<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="3921475131"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+auto <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-6384567588307613" data-ad-slot="3418757643"></ins>
+
+*/
+
+var art_wxz='';
+if("undefined" != typeof lmname){
+	if(lmname == "python"){
+	art_wxz+='<a href="https://www.xz577.com/weixin.html" target="_blank"><img src="//files.jb51.net/image/tb_all.gif?1217" class="nohref"></a>';
+	}else {
+	art_wxz+='<a href="https://www.xz577.com/weixin.html" target="_blank"><img src="//files.jb51.net/image/tb_all.gif?1217" class="nohref"></a>';
+	}
+}
+var art_down='';
+if(art_wxz!=''){
+art_down=art_wxz;
+}else{
+	art_down='';
+//art_down='<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/production/ql/common/h/source/n/h/production/kmtr.js"></s'+'cript>';
+}
+var art_down2 ='<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/source/p_khqtq/common/j/source/qq.js"></s'+'cript>';
+//var art_down ='<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/production/ql/common/h/source/n/h/production/kmtr.js"></s'+'cript>';
+//art_down += '<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt><ins class="adsbygoogle" style="display:block;width:728px;height:90px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="3647610559" data-ad-format="link" data-full-width-responsive="true"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+//var art_down2 = '<scrip'+'t type="text/javascript" src="//jscode.jbzj.com/site/bws_yc/v_o/source/lc.js"></s'+'cript>';
+
+var list_r_r300 = '<scrip'+'t type="text/javascript" src="//jscode.jbzj.com/common/static/js/2f9w.js?cxtwdu=wg"></s'+'cript>';
+
+var art_xg = '<scr'+'ipt type="text/javascript" src="//jscode.jbzj.com/site/g/bx_d/production/hak_cq.js"></scr'+'ipt>';
+
+//var art_down3 = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/mhzqnndqnkon.js"></s'+'cript>';
+
+var side_up = '<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+side_up+='<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="4845332105"></ins><scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+/*side_up+='<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6384567588307613" data-ad-slot="4845332105" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>';
+//var side_up = '<sc'+'ript type="text/javascript" src="//jscode.jbzj.com/faswjbzpw.js"></sc'+'ript>';*/
+
+var r_2 = '<script type="text/javascript">var cpro_id="u1397867";(window["cproStyleApi"] = window["cproStyleApi"] || {})[cpro_id]={at:"3",rsi0:"300",rsi1:"380",pat:"6",tn:"baiduCustNativeAD",rss1:"#FFFFFF",conBW:"1",adp:"1",ptt:"0",titFF:"%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91",titFS:"14",rss2:"#000000",titSU:"0",ptbg:"90",piw:"0",pih:"0",ptp:"0"}</script><script src="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>';
+
+var fudong=r_2;
+
+if (art_up_isbd==1){
+var art_bot=art_upp[0];
+}else{
+var art_bot=art_upp[2];
+}
+
+if (projectName!='article')
+{
+art_bot=art_upp[2];
+}
+
+var gg_l = '';
+/*if("undefined" != typeof tougao && projectName=='photoshop'){
+	gg_l +='<a href="https://huke88.com/?source=jb51" target="_blank"><img src="//files.jb51.net/image/ps300.png?0926" width="300" height="250" class="nohref" data-baiduimageplus-ignore=""></a>';
+}else{*/
+gg_l += '<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+gg_l += '<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="6438537127"></ins>';
+gg_l += '<scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+//}
+//var gg_l= '<scr'+'ipt type="text/javascript" src="//jscode.jbzj.com/lgycphfyo.js"></scr'+'ipt>';
+
+//u811641
+var gg_r = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/bwyffvsfzdec.js"></sc'+'ript>';
+
+//var r1gg=side_up;
+
+var r1gg='<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+r1gg+='<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="2817964327"></ins>';
+r1gg+='<scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+
+var r2gg='<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+r2gg+='<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-6384567588307613" data-ad-slot="2129515335"></ins>';
+r2gg+='<scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+
+var rbbd = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/source/hcy/static/z/common/l/k-blu.js"></sc'+'ript>';
+
+var dxy728 = '<a href="http://www.33ip.com" target="_blank"><img src="//files.jb51.net/image/33ip_728.gif"></a>';
+var dxy320 = '<a href="http://edu.jb51.net/" target="_blank"><img src="//files.jb51.net/image/edu320.png" width=320 height=90></a>';
+
+//u1424765
+var qq_index = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/rldzo3l5kz.js"></scri'+'pt>';
+
+//list820
+var index_top = '<scri'+'pt type="text/javascript" src="//jscode.jbzj.com/common/e/static/zw-vo/common/v-oao.js"></scri'+'pt>';
+
+var list_r_mid ='<scri'+'pt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scri'+'pt>';
+list_r_mid+='<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-6384567588307613" data-ad-slot="3321016300" data-ad-format="auto" data-full-width-responsive="true"></ins>';
+list_r_mid+='<scri'+'pt>(adsbygoogle = window.adsbygoogle || []).push({});</s'+'cript>';
+
+jbMap['logo_m'] = function() {
+	document.writeln(logo_m);
+};
+
+jbMap['logo_r'] = function() {
+	document.writeln(logo_r);
+};
+
+jbMap['idctu'] = function() {
+	document.writeln(idctu);
+};
+
+jbMap['tonglanbd'] = function() {
+	document.writeln(tonglanbd);
+};
+
+jbMap['tonglangg'] = function() {
+	document.writeln(tonglangg);
+};
+
+jbMap['tonglan1'] = function() {
+	document.writeln(tonglan1);
+};
+
+jbMap['tonglan1_2'] = function() {
+	document.writeln(tonglan1_2);
+};
+
+jbMap['tonglan2'] = function() {
+	document.writeln(tonglan2);
+};
+
+jbMap['tonglan2_1'] = function() {
+	document.writeln(tonglan2_1);
+};
+
+jbMap['tonglan2_2'] = function() {
+	document.writeln(tonglan2_2);
+};
+
+jbMap['tonglan3_1'] = function() {
+	document.writeln(tonglan3_1);
+};
+
+jbMap['tonglan3_2'] = function() {
+	document.writeln(tonglan3_2);
+};
+
+jbMap['tonglan3_3'] = function() {
+	document.writeln(tonglan3_3);
+};
+
+jbMap['tonglan_1024'] = function() {
+	document.writeln(tonglan_1024);
+};
+
+jbMap['botad'] = function() {
+	document.writeln(botad);
+};
+
+jbMap['idctu1'] = function() {
+	document.writeln(idctu1);
+};
+
+jbMap['idctu2'] = function() {
+	document.writeln(idctu2);
+};
+
+jbMap['tit_down'] = function() {
+	document.writeln(tit_down);
+};
+
+jbMap['art_up'] = function() {
+	document.writeln(art_up);
+};
+
+jbMap['art_bot'] = function() {
+	document.writeln(art_bot);
+};
+
+jbMap['art_down'] = function() {
+	document.writeln(art_down);
+};
+
+jbMap['art_down2'] = function() {
+	document.writeln(art_down2);
+};
+
+jbMap['list_r_r300'] = function() {
+	document.writeln(list_r_r300);
+};
+
+jbMap['art_xg'] = function() {
+	document.writeln(art_xg);
+};
+
+jbMap['side_up'] = function() {
+	document.writeln(side_up);
+};
+
+jbMap['r_2'] = function() {
+	document.writeln(r_2);
+};
+
+jbMap['fudong'] = function() {
+	document.writeln(fudong);
+};
+
+
+jbMap['gg_l'] = function() {
+	document.writeln(gg_l);
+};
+
+jbMap['gg_r'] = function() {
+	document.writeln(gg_r);
+};
+
+jbMap['r1gg'] = function() {
+	document.writeln(r1gg);
+};
+
+jbMap['r2gg'] = function() {
+	document.writeln(r2gg);
+};
+
+jbMap['rbbd'] = function() {
+	document.writeln(rbbd);
+};
+
+jbMap['bd200'] = function() {
+	document.writeln(bd200);
+};
+
+
+jbMap['bctools'] = function() {
+	document.writeln(bctools);
+};
+
+jbMap['dxy728'] = function() {
+	document.writeln(dxy728);
+};
+
+jbMap['dxy320'] = function() {
+	document.writeln(dxy320);
+};
+
+jbMap['qq_index'] = function() {
+	document.writeln(qq_index);
+};
+
+jbMap['index_top'] = function() {
+	document.writeln(index_top);
+};
+
+jbMap['list_r_mid'] = function() {
+	document.writeln(list_r_mid);
+};
+
+if (jQuery) { 
+/*$jb51_top = $('#jb51_topbar');
+if($jb51_top){
+    $jb51_top.html('<div class="userbar"><a href="http://tougao.jb51.net" target="_blank">Í¶¸åÖÐÐÄ</a><img style="width:32px; height:22px" src="http://img.jb51.net/skin/2016/images/newn.gif" alt="hot"></div>');
+}*/
+
+$addnr = $('div#content .clearfix');
+var xbqq = '';
+var xbtj = '';
+if($addnr){
+	if(projectName=="article"){
+        xbqq='2998481778';
+	}else{
+		xbqq='1079426599';
+		if(projectName=="office"){
+		    xbtj='<div class="sidebox-recomm1"><a class="style03" href="https://www.jb51.net/news/699009.html" target="_blank"><div class="title"><strong>Õ¾³¤ÍÆ¼ö</strong></div><div class="tj_ico3"></div><h4>Office×¨ÒµÔöÇ¿°æ2019Õý°æ°ì¹«Èí¼þ</h4><p>Ò»´Î¹ºÂòÖÕÉíÊ¹ÓÃ£¬°ó¶¨ÄúµÄÎ¢ÈíÕË»§£¡°²È«¿É¿¿¿´µÃ¼û£¡½Å±¾Ö®¼Ò·ÛË¿×¨Êô¼Û[<i>£¤148Ôª</i>]</p></a></div>';
+		}else if(projectName=="os"){
+		    xbtj='<div class="sidebox-recomm1"><a class="style02" href="https://www.jb51.net/os/win10/698746.html" target="_blank"><div class="title"><strong>Õ¾³¤ÍÆ¼ö</strong></div><div class="tj_ico2"></div><h4>Õý°æWindows 10¼ÒÍ¥°æ/×¨Òµ°æÓÀ¾Ã¼¤»îÃÜÔ¿</h4><p>Õý°æÖ§³ÖÎÞÏÞ´ÎÖØ×°ÏµÍ³£¬°ó¶¨Î¢Èí¹Ù·½¸öÈËÕÊ»§£¬Ö§³Ö¸ü»»Éè±¸£¬¹ºÂòÒ»´Î¿ÉÓÀ¾ÃÊ¹ÓÃ¡£ÏÞÊ±ÇÀ¹º[£¤<span>1088</span>&rarr;<i>£¤248</i>]Æð</p></a></div>';
+		}
+	}
+	//$addnr.before(xbtj+'<p class="tip">ÈçÄú¶Ô±¾ÎÄÓÐËùÒÉÒå»òÕß¶Ô±¾ÎÄÄÚÈÝÌá¹©²¹³ä½¨Òé£¬ÇëÁªÏµÐ¡±à<a href="tencent://message/?uin=461478385&Site=//www.jb51.net" target="_blank"><img border="0" src="https://pub.idqqimg.com/qconn/wpa/button/button_111.gif" alt="µã»÷ÕâÀï¸øÎÒ·¢ÏûÏ¢" title="µã»÷ÕâÀï¸øÎÒ·¢ÏûÏ¢"/></a>£¬±¾Õ¾»á±£ÁôÐÞ¸ÄÕß°æÈ¨</p>');
+    $addnr.before(xbtj+'');
+}
+
+$yuanshichang = $('.topbarleft');
+if($yuanshichang){
+	$yuanshichang.find('a').eq(0).attr('href','https://task.jb51.net');
+	$yuanshichang.find('a').eq(0).text('½Å±¾ÈÎÎñÆ½Ì¨');
+	$yuanshichang.append('<a href="https://www.yuanshichang.com/" target="_blank" style="color:red">Ô´ÂëÉÌ³Ç</a><a href="http://idc.jb51.net/" target="_blank" style="color:red">½Å±¾ÔÆ</a>');
+}
+if ("undefined" != typeof ourl) {
+    if (ourl) {
+        $content = $('#content');
+        if($content){
+			if(ourl.indexOf(":") > 0 ){
+            $content.append('<p>Ô­ÎÄÁ´½Ó£º' + ourl +'</p>');
+			}else{
+			$content.append('<p>Ô­ÎÄÁ´½Ó£º' + window.atob(ourl) +'</p>');
+			}
+        }
+    }
+}
+$(function(){ 
+var vzl=document.getElementById('txtlink').getElementsByTagName('span'),j=0;
+for(var i=0;i<vzl.length;i++){
+	j=i%4?j:++j;
+	vzl[i].style=j%2?'color:blue':'color:red';
+}
+}); 
+
+/*var shequimg = new Array()
+shequimg[0] = '//files.jb51.net/image/pythonsq1.png';
+shequimg[1] = '//files.jb51.net/image/pythonsq2.png';
+var nn =Math.round(Math.random());*/
+
+var shequlink = '<div id="ewm"><div class="jb51ewm"><div class="fl"><img src="//files.jb51.net/skin/2018/images/jb51ewm.png" /></div><div class="fr"><p>Î¢ÐÅ¹«ÖÚºÅËÑË÷ ¡° <span>½Å±¾Ö®¼Ò</span> ¡± £¬Ñ¡Ôñ¹Ø×¢</p><p>³ÌÐòÔ³µÄÄÇÐ©ÊÂ¡¢ËÍÊéµÈ»î¶¯µÈ×ÅÄã</p></div></div></div>';
+//var shequlink = '<div id="ewm"><div class="jb51ewm"><img src="'+ shequimg[nn] +'" /></div></div>';
+var newslink = '<div id="ewm"><div class="jb51ewm"><div class="fl"><img src="//files.jb51.net/skin/2018/images/itewm.png"></div><div class="fr"><p>Î¢ÐÅ¹«ÖÚºÅËÑË÷ ¡° <span>IT·þÎñÈ¦¶ù</span> ¡± £¬Ñ¡Ôñ¹Ø×¢</p><p>Ã¿ÈÕÊ®µã²¥±¨£¬°ÑÎÕÐÐÒµÈÈµã£¬½ô¸úÐÐÒµ½Å²½</p></div></div></div>';
+$content = $('#content');
+//shequlink=art_wxz+shequlink;
+if("undefined" != typeof downlm && downlm == "art-news"){
+	if($content){$content.after(newslink);}
+}else{
+    if($content){$content.after(shequlink);}
+}
+
+var topli=$('#ic .list:first');
+if(topli){
+	//topli.find("li:eq(0)").html('<li><a href="###" title="java" target="_blank" class="tag">¸£Àû</a><a rel="nofollow" href="https://www.jb51.net/os/win10/698746.html" title="Õý°æWindows 10 ¼ÒÍ¥/×¨Òµ°æ ÐÂÄêÌØ¼Û 248Ôª" target="_blank" class="tt" style=" color:red;">Õý°æWindows 10 ¼ÒÍ¥/×¨Òµ°æ ÐÂÄêÌØ¼Û 248Ôª</a><span>01-04</span></li>');
+}
+
+/*
+$topnum = $('.newsList.newList-in');
+if("undefined" == typeof tougao){
+	if($topnum){$topnum.append('<li><EM class="no11">11</EM><a href="https://www.xrcloud.net/ruicloud/AnniversaryActive?from=jiaobenzhijia" title="¡¾ÐÂî£ÔÆ¡¿1117ÖÜÄêÇì£¬²úÆ·µÍÖÁ1.7ÕÛ" target="_blank">¡¾ÐÂî£ÔÆ¡¿1117ÖÜÄêÇì£¬²úÆ·µÍÖÁ1.7ÕÛ</a></li>');}
+}
+var topli=$('#ic .list');
+if(topli){
+	topli.find("li:eq(0)").html('<li><a href="/list/list_207_1.htm" title="java" target="_blank" class="tag">java</a><a href="/article/160064.htm" title="¿ª·¢10Äê£¬È«¼ÇÔÚÕâ±¾Java½ø½×±¦µäÀïÁË" target="_blank" class="tt" style=" color:red;">¿ª·¢10Äê£¬È«¼ÇÔÚÕâ±¾Java½ø½×±¦µäÀïÁË</a><span>04-22</span></li>');
+}*/
+//var el = $('#footer'); 
+//el.html(el.html().replace(/½Å±¾Ö®¼Ò/ig, 'ÐìÖÝÀ¶¼ÑÍøÂç¿Æ¼¼ÓÐÏÞ¹«Ë¾'));
+
+/*if(getCookie("zfbhb")!="ok"){
+	$('#content').append('<div id="hbbox"><a href="http://dwz.cn/7oNQfU" target="_blank"><img src="//files.jb51.net/image/0yg.jpg"></a></div>');
+	setCookie("zfbhb","ok");
+}
+var pathName = window.document.location.pathname;
+var projectName = pathName.substring(1, pathName.substr(1).indexOf('/') + 1);
+if("undefined" != typeof tougao && projectName=='3DMAX'){
+$('.article-right').prepend("<div class='r300 clearfix mb10'><a href='https://jq.qq.com/?_wv=1027&k=5IxNMeP' target='_blank'><img src='//files.jb51.net/image/3dmax300.gif?0613' width='300' height='200'></a></div>");
+}
+if("undefined" == typeof tougao){
+$('.article-right').prepend("<div class='r300 clearfix mb10'><a href='http://tg.iopen.com.cn/pc/jbzj/index.html?utm_source=jiaobenzhijia' target='_blank'><img src='//files.jb51.net/image/iopen250.gif'></a></div>");
+}*/	
+if("undefined" == typeof tougao ){
+    
+	var yyweb =$('.bor-red');
+    if(yyweb){
+        if(projectName=='web'||projectName=='htm5'||projectName=='css'||projectName=='xml'||projectName=='Dreamweaver'||projectName=='frontpage'){
+            yyweb.after('<div class="r300 clearfix mt10"><a href="https://www.yiyangidc.com/" target="_blank"><img src="//files.jb51.net/image/yywysj300.png" width="300" height="100"></a></div>');
+        }   
+    }
+    if("undefined" != typeof lmname ){
+        var lmarr=',,½Å±¾×¨À¸,vbs,DOS/BAT,hta,htc,python,perl,ÓÎÏ·Ïà¹Ø,VBA,Ô¶³Ì½Å±¾,ColdFusion,ruby×¨Ìâ,autoit,seraphzone,PowerShell,linux shell,Lua,Golang,Erlang,ÆäËû,·þÎñÆ÷,,';
+        if(lmarr.indexOf(',' + lmname + ',') > 0){
+            $(document.getElementById('sidebar-right').children[3]).before('<div class="r300 clearfix mt10"><a href="https://www.yiyangidc.com/" target="_blank"><img src="//files.jb51.net/image/yyjbzl300.png" width="300" height="100" class="nohref"></a></div>');
+        }
+        var lmsjk=',,Êý¾Ý¿â,MsSql,Mysql,mariadb,oracle,DB2,mssql2008,mssql2005,SQLite,PostgreSQL,MongoDB,Redis,Access,Êý¾Ý¿âÎÄÕª,Êý¾Ý¿âÆäËü,,';
+        if(lmsjk.indexOf(',' + lmname + ',') > 0){
+            $(document.getElementById('sidebar-right').children[3]).before('<div class="r300 clearfix mt10"><a href="https://www.yiyangidc.com/" target="_blank"><img src="//files.jb51.net/image/yysjk300.png" width="300" height="100" class="nohref"></a></div>');
+        }
+    }
+}
+}
+9§Ç¶Gô      ^åÅÃ^åÅÃAÇ(ð^åÚ­   &    :https://icws.jb51.net/good/arc2019.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Sun, 14 Jun 2020 06:37:55 GMT
+Content-Type: application/x-javascript
+Content-Length: 35897
+Last-Modified: Sat, 13 Jun 2020 15:45:16 GMT
+Accept-Ranges: bytes
+ETag: "0ce22a29941d61:0"
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+X-Cache-Spec: Yes
+Age: 1
+X-Via: 1.1 PSahmassxjb78:9 (Cdn Cache Server V2.0), 1.1 chkuan33:3 (Cdn Cache Server V2.0)
+X-Ws-Request-Id: 5ee5c5c3_chkuan35_10918-53643
+ original-response-headers Date: Sun, 14 Jun 2020 06:37:55 GMT
+Content-Type: application/x-javascript
+Content-Length: 35897
+Connection: keep-alive
+Last-Modified: Sat, 13 Jun 2020 15:45:16 GMT
+Accept-Ranges: bytes
+ETag: "0ce22a29941d61:0"
+Server: Microsoft-IIS/7.5
+X-Powered-By: ASP.NET
+X-Cache-Spec: Yes
+Age: 1
+X-Via: 1.1 PSahmassxjb78:9 (Cdn Cache Server V2.0), 1.1 chkuan33:3 (Cdn Cache Server V2.0)
+X-Ws-Request-Id: 5ee5c5c3_chkuan35_10918-53643
+ uncompressed-len 0 net-response-time-onstart 160 net-response-time-onstop 180   Œ9

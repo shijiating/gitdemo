@@ -1,0 +1,11 @@
+<conversion>
+  <applied-converters>
+    <converter id="DockerRunConfigurationConverterProvider" />
+  </applied-converters>
+  <project-files>
+    <file path="/home/sjt/chinafyl-adminycj-master/.idea/modules.xml" timestamp="1592016218000" />
+    <file path="/home/sjt/chinafyl-adminycj-master/.idea/chinafyl-adminycj-master.iml" timestamp="1592290689603" />
+    <file path="/home/sjt/chinafyl-adminycj-master/.idea/misc.xml" timestamp="1592290689615" />
+    <file path="/home/sjt/chinafyl-adminycj-master/.idea/workspace.xml" timestamp="1592315928518" />
+  </project-files>
+</conversion>

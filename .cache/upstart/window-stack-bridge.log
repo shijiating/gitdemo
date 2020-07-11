@@ -1,0 +1,1 @@
+Error getting parents for "/org/ayatana/bamf/window/90177544" QDBusError("org.freedesktop.DBus.Error.UnknownMethod", "在路径 org.ayatana.bamf.view 的对象上没有 /org/ayatana/bamf/window/90177544 接口")

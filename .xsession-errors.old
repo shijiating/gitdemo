@@ -1,0 +1,44 @@
+openConnection: connect: 没有那个文件或目录
+cannot connect to brltty at :0
+upstart: unity-panel-service main 进程 (1723)以状态 1 结束
+upstart: unity-panel-service main 进程结束, 重新产生
+upstart: window-stack-bridge main 进程 (1379)已经被HUP 信号杀死
+upstart: bamfdaemon main 进程 (1463)以状态 1 结束
+upstart: bamfdaemon main 进程结束, 重新产生
+upstart: unity-settings-daemon main 进程 (1702)已经被HUP 信号杀死
+upstart: unity-settings-daemon main 进程结束, 重新产生
+upstart: indicator-messages main 进程 (1769)已经被HUP 信号杀死
+upstart: indicator-messages main 进程结束, 重新产生
+upstart: indicator-bluetooth main 进程 (1770)已经被TERM 信号杀死
+upstart: indicator-bluetooth main 进程结束, 重新产生
+upstart: indicator-power main 进程 (1771)已经被TERM 信号杀死
+upstart: indicator-power main 进程结束, 重新产生
+upstart: indicator-datetime main 进程 (1772)已经被TERM 信号杀死
+upstart: indicator-datetime main 进程结束, 重新产生
+upstart: indicator-keyboard main 进程 (1773)已经被HUP 信号杀死
+upstart: indicator-keyboard main 进程结束, 重新产生
+upstart: hud main 进程 (1700)已经被HUP 信号杀死
+upstart: indicator-printers main 进程 (1775)以状态 1 结束
+upstart: indicator-printers main 进程结束, 重新产生
+upstart: indicator-session main 进程 (1776)已经被TERM 信号杀死
+upstart: indicator-session main 进程结束, 重新产生
+upstart: upstart-dbus-system-bridge main 进程结束, 重新产生
+upstart: indicator-application main 进程 (1777)已经被TERM 信号杀死
+upstart: indicator-application main 进程结束, 重新产生
+upstart: upstart-udev-bridge main 进程结束, 重新产生
+upstart: upstart-dbus-session-bridge main 进程结束, 重新产生
+upstart: upstart-file-bridge main 进程结束, 重新产生
+upstart: indicator-sound main 进程 (1774)已经被HUP 信号杀死
+upstart: indicator-sound main 进程结束, 重新产生
+upstart: gnome-session (Unity) main 进程 (1709)已经被HUP 信号杀死
+upstart: 从告知的D-Bus总线断开
+upstart: unity7 main 进程 (1901)以状态 1 结束
+upstart: bamfdaemon main 进程 (65607)已经被TERM 信号杀死
+upstart: indicator-keyboard main 进程 (65620)已经被TERM 信号杀死
+upstart: upstart-dbus-system-bridge main 进程 (65623)以状态 1 结束
+upstart: upstart-dbus-session-bridge main 进程 (65639)以状态 1 结束
+upstart: indicator-power main 进程 (65618)已经被TERM 信号杀死
+upstart: indicator-printers main 进程 (65621)已经被TERM 信号杀死
+upstart: indicator-bluetooth main 进程 (65614)已经被TERM 信号杀死
+upstart: indicator-datetime main 进程 (65619)已经被TERM 信号杀死
+upstart: upstart-file-bridge main 进程 (65712)已经被TERM 信号杀死

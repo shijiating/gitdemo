@@ -1,0 +1,196 @@
+# 这个 viminfo 文件是由 Vim 7.4 所产生。
+# 如果想要自行修改请特别小心！
+
+# 文件被写的时候 ‘encoding’ 的值
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# 上个 Search 图案：
+~Msle0~/\<auto\>
+
+# 命令行 历史记录 (从新到旧)：
+:q!
+:wq
+:wq!
+:ZZ
+:zz
+
+# 查找字符串 历史记录 (从新到旧)：
+? \<auto\>
+
+# 表达式 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+
+# 输入行 历史记录 (从新到旧)：
+
+# 寄存器:
+"z	CHAR	0
+	zZZZi�kb�krw
+
+# 文件标记:
+'0  5  3  /usr/share/applications/postman.desktop
+'1  16  20  /etc/network/interfaces
+'2  11  11  /etc/network/interfaces
+'3  13  24  /etc/network/interfaces
+'4  24  0  /etc/mysql/my.cnf
+'5  36  21  /etc/mysql/mysql.conf.d/mysqld.cnf
+'6  38  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+'7  52  79  /etc/apt/sources.list
+
+# 跳转列表 (从新到旧):
+-'  5  3  /usr/share/applications/postman.desktop
+-'  1  0  /usr/share/applications/postman.desktop
+-'  16  20  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  11  11  /etc/network/interfaces
+-'  13  24  /etc/network/interfaces
+-'  2  0  /etc/network/interfaces
+-'  24  0  /etc/mysql/my.cnf
+-'  1  0  /etc/mysql/my.cnf
+-'  36  21  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  1  0  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  38  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  37  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  36  21  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  1  0  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  38  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  37  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  24  0  /etc/mysql/my.cnf
+-'  1  0  /etc/mysql/my.cnf
+-'  36  21  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  1  0  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  38  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  37  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  36  21  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  1  0  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  38  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  37  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  24  0  /etc/mysql/my.cnf
+-'  1  0  /etc/mysql/my.cnf
+-'  36  21  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  1  0  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  38  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  37  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  36  21  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  1  0  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  38  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  37  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  24  0  /etc/mysql/my.cnf
+-'  1  0  /etc/mysql/my.cnf
+-'  36  21  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  1  0  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  38  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+-'  37  8  /etc/mysql/mysql.conf.d/mysqld.cnf
+-'  52  79  /etc/apt/sources.list
+-'  1  0  /etc/apt/sources.list
+
+# 文件内的标记历史记录 (从新到旧):
+
+> /usr/share/applications/postman.desktop
+	"	5	3
+	^	5	6
+	.	5	5
+	+	10	0
+	+	5	5
+
+> /etc/network/interfaces
+	"	16	20
+	^	16	21
+	.	16	9
+	+	2	0
+	+	3	0
+	+	11	0
+	+	2	0
+	+	3	0
+	+	11	0
+	+	2	0
+	+	3	0
+	+	11	23
+	+	13	0
+	+	11	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	13	0
+	+	13	0
+	+	17	0
+	+	16	10
+	+	15	8
+	+	16	9
+
+> /etc/mysql/my.cnf
+	"	24	0
+
+> /etc/mysql/mysql.conf.d/mysqld.cnf
+	"	36	21
+	^	36	22
+	.	36	21
+	+	35	21
+	+	38	0
+	+	35	25
+	+	36	21
+
+> /etc/apt/sources.list
+	"	52	79
+	^	52	80
+	.	53	0
+	+	52	79
+	+	53	0

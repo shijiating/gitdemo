@@ -1,0 +1,313 @@
+/* css hack */
+
+
+
+/* 全局设定 */
+
+
+
+/*超链全局接样式*/
+
+
+
+/*页面宽度 - 根据设计页面宽度修改*/
+
+
+
+
+/*其它通用样式*/
+
+
+
+/******************************************************
+
+/* 公共样式集合
+
+/******************************************************
+
+/* 常用样式：样式名首字母 + 样式数值|首字母   (样式名带-，-后首字母)
+
+/* .db{display:block;}    .fl{float:left;}           .pa{position:absolute;}
+
+/* .fs12{font-size:12px;} .fwn{font-weight:normal;}
+
+/******************************************************
+
+/* width：         width[1~100]              单位:%
+
+/* font-size：     fs[0~100]                 单位:px
+
+/* line-height：   lh[10~100]                单位:px
+
+/* z-index：       zi[0~12|666|777|888|999]
+
+/* top：           t[-20~200]                单位:px
+
+/* right：         r[0~100]                  单位:px
+
+/* bottom：        b[0~100]                  单位:px
+
+/* left：          l[0~100]                  单位:px
+
+/* margin居中:     m[0a~100a]                单位:px
+
+/* margin-top:     mt[-20~100]               单位:px
+
+/* margin-right:   mr[0~100]                 单位:px
+
+/* margin-bottom:  mb[1~100]                 单位:px
+
+/* margin-left:    ml[-20~100]               单位:px
+
+/* padding-top:    pt[1~200]                 单位:px
+
+/* padding-right:  pr[1~100]                 单位:px
+
+/* padding-bottom: pb[1~100]                 单位:px
+
+/* padding-left:   pl[1~100]                 单位:px
+
+/*******************************************************/
+
+
+
+/*常用颜色>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.red{color:red;}  .orangered{color: orangered;}
+
+.white{color:#FFF;}
+
+
+.c3{color: #333;}.c4{color:#444;}.c5{color: #555;}.c6{color:#666;}.c7{color: #777;}.c8{color:#888;}.c9{color: #999;}
+
+.cb0{color: #B0B0B0;}
+
+.cc0{color: #C0C0C0;}
+
+.bg_cover{ background-color: rgba(0,0,0,.7); }
+
+
+/*常用颜色(带:hover)>>>>>>>>>>>>>>*/
+
+.chred, .chred:hover{color:red;}  .chorangered, .chorangered:hover{color:orangered;}
+
+.chwhite, .chwhite:hover{color:#FFF;}
+
+
+
+.ch3, .ch3:hover{color:#333;}.ch4, .ch4:hover{color:#444;}.ch5, .ch5:hover{color:#555;}.ch6, .ch6:hover{color:#666;}.ch7, .ch7:hover{color:#777;}.ch8, .ch8:hover{color:#888;}.ch9, .ch9:hover{color:#999;}
+
+
+
+.chb0, .chb0:hover{color:#B0B0B0;}
+
+.chc0, .chco:hover{color:#C0C0C0;}
+
+.clan, .clan:hover{color:#3879d9;}
+
+/*常用样式：>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*布局：*/
+
+.cb, .fix, .clearfix{clear:both;}
+
+.db{display:block;}
+
+.di{display:inline;}
+
+.dib{display: inline-block;}
+
+.dli{display: list-item;}
+
+.dtc{display: table-cell;}
+
+.dn{display:none;}
+
+.show{display:block;}
+
+.vh{ visibility:hidden ;}
+
+.fl{float:left;}
+
+.fr{float:right !important;}
+
+.oh{overflow:hidden;}
+
+.pr{position:relative;}
+
+.pa{position:absolute;}
+
+.pf{position:fixed;}
+
+.ma{margin:auto;}
+
+.hand, .cp{cursor:pointer;}
+
+.mw100{max-width:100%;}
+
+.h100{height: 100%;}
+
+/*边框*/
+
+.bn{border:none !important;}
+
+/*超出省略宽度*/
+
+.overSL, .overSL li{width: 100%; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/*字体粗细*/
+
+.fwn, .fnor{font-weight:normal;}.fwb{font-weight:bold;}.fwl{font-weight: lighter;}
+
+/*文本下划线*/
+
+.tdu{text-decoration:underline;}.tduh:hover{text-decoration: underline;}.tdn, .tdn:hover{text-decoration:none;}
+
+/*文本缩进对齐*/
+
+.vam{vertical-align:middle;}
+
+.vat{vertical-align:top;}
+
+.vab{vertical-align:bottom;}
+
+.tac{text-align:center;}
+
+.tal{text-align: left;}
+
+.tar{text-align: right;}
+
+.ti2{text-indent: 2em;}
+
+.ls1{letter-spacing:1px;}
+
+.ls2{letter-spacing:2px;}
+
+.ls3{letter-spacing:3px;}
+
+.ls4{letter-spacing:4px;}
+
+.divti2 p, .divti2 h1, .divti2 h2, .divti2 h3, .divti2 h4, .divti2 h5{text-indent: 2em;}
+
+
+
+/*宽度[1%-100%]*/
+
+.width1{width:1% !important;}.width2{width:2% !important;}.width3{width:3% !important;}.width4{width:4% !important;}.width5{width:5% !important;}.width6{width:6% !important;}.width7{width:7% !important;}.width8{width:8% !important;}.width9{width:9% !important;}.width10{width:10% !important;}.width11{width:11% !important;}.width12{width:12% !important;}.width13{width:13% !important;}.width14{width:14% !important;}.width15{width:15% !important;}.width16{width:16% !important;}.width17{width:17% !important;}.width18{width:18% !important;}.width19{width:19% !important;}.width20{width:20% !important;}.width21{width:21% !important;}.width22{width:22% !important;}.width23{width:23% !important;}.width24{width:24% !important;}.width25{width:25% !important;}.width26{width:26% !important;}.width27{width:27% !important;}.width28{width:28% !important;}.width29{width:29% !important;}.width30{width:30% !important;}.width31{width:31% !important;}.width32{width:32% !important;}.width33{width:33% !important;}.width34{width:34% !important;}.width35{width:35% !important;}.width36{width:36% !important;}.width37{width:37% !important;}.width38{width:38% !important;}.width39{width:39% !important;}.width40{width:40% !important;}.width41{width:41% !important;}.width42{width:42% !important;}.width43{width:43% !important;}.width44{width:44% !important;}.width45{width:45% !important;}.width46{width:46% !important;}.width47{width:47% !important;}.width48{width:48% !important;}.width49{width:49% !important;}.width50{width:50% !important;}.width51{width:51% !important;}.width52{width:52% !important;}.width53{width:53% !important;}.width54{width:54% !important;}.width55{width:55% !important;}.width56{width:56% !important;}.width57{width:57% !important;}.width58{width:58% !important;}.width59{width:59% !important;}.width60{width:60% !important;}.width61{width:61% !important;}.width62{width:62% !important;}.width63{width:63% !important;}.width64{width:64% !important;}.width65{width:65% !important;}.width66{width:66% !important;}.width67{width:67% !important;}.width68{width:68% !important;}.width69{width:69% !important;}.width70{width:70% !important;}.width71{width:71% !important;}.width72{width:72% !important;}.width73{width:73% !important;}.width74{width:74% !important;}.width75{width:75% !important;}.width76{width:76% !important;}.width77{width:77% !important;}.width78{width:78% !important;}.width79{width:79% !important;}.width80{width:80% !important;}.width81{width:81% !important;}.width82{width:82% !important;}.width83{width:83% !important;}.width84{width:84% !important;}.width85{width:85% !important;}.width86{width:86% !important;}.width87{width:87% !important;}.width88{width:88% !important;}.width89{width:89% !important;}.width90{width:90% !important;}.width91{width:91% !important;}.width92{width:92% !important;}.width93{width:93% !important;}.width94{width:94% !important;}.width95{width:95% !important;}.width96{width:96% !important;}.width97{width:97% !important;}.width98{width:98% !important;}.width99{width:99% !important;}.width100 {width:100% !important; }
+
+/*字体大小*/
+
+.fs0{font-size:0px;}.fs1{font-size:1px;}.fs2{font-size:2px;}.fs3{font-size:3px;}.fs4{font-size:4px;}.fs5{font-size:5px;}.fs6{font-size:6px;}.fs7{font-size:7px;}.fs8{font-size:8px;}.fs9{font-size:9px;}.fs10{font-size:10px;}.fs11{font-size:11px;}.fs12{font-size:12px;}.fs13{font-size:13px;}.fs14{font-size:14px;}.fs15{font-size:15px;}.fs16{font-size:16px;}.fs17{font-size:17px;}.fs18{font-size:18px;}.fs19{font-size:19px;}.fs20{font-size:20px;}.fs21{font-size:21px;}.fs22{font-size:22px;}.fs23{font-size:23px;}.fs24{font-size:24px;}.fs25{font-size:25px;}.fs26{font-size:26px;}.fs27{font-size:27px;}.fs28{font-size:28px;}.fs29{font-size:29px;}.fs30{font-size:30px;}.fs31{font-size:31px;}.fs32{font-size:32px;}.fs33{font-size:33px;}.fs34{font-size:34px;}.fs35{font-size:35px;}.fs36{font-size:36px;}.fs37{font-size:37px;}.fs38{font-size:38px;}.fs39{font-size:39px;}.fs40{font-size:40px;}.fs41{font-size:41px;}.fs42{font-size:42px;}.fs43{font-size:43px;}.fs44{font-size:44px;}.fs45{font-size:45px;}.fs46{font-size:46px;}.fs47{font-size:47px;}.fs48{font-size:48px;}.fs49{font-size:49px;}.fs50{font-size:50px;}.fs51{font-size:51px;}.fs52{font-size:52px;}.fs53{font-size:53px;}.fs54{font-size:54px;}.fs55{font-size:55px;}.fs56{font-size:56px;}.fs57{font-size:57px;}.fs58{font-size:58px;}.fs59{font-size:59px;}.fs60{font-size:60px;}.fs61{font-size:61px;}.fs62{font-size:62px;}.fs63{font-size:63px;}.fs64{font-size:64px;}.fs65{font-size:65px;}.fs66{font-size:66px;}.fs67{font-size:67px;}.fs68{font-size:68px;}.fs69{font-size:69px;}.fs70{font-size:70px;}.fs71{font-size:71px;}.fs72{font-size:72px;}.fs73{font-size:73px;}.fs74{font-size:74px;}.fs75{font-size:75px;}.fs76{font-size:76px;}.fs77{font-size:77px;}.fs78{font-size:78px;}.fs79{font-size:79px;}.fs80{font-size:80px;}.fs81{font-size:81px;}.fs82{font-size:82px;}.fs83{font-size:83px;}.fs84{font-size:84px;}.fs85{font-size:85px;}.fs86{font-size:86px;}.fs87{font-size:87px;}.fs88{font-size:88px;}.fs89{font-size:89px;}.fs90{font-size:90px;}.fs91{font-size:91px;}.fs92{font-size:92px;}.fs93{font-size:93px;}.fs94{font-size:94px;}.fs95{font-size:95px;}.fs96{font-size:96px;}.fs97{font-size:97px;}.fs98{font-size:98px;}.fs99{font-size:99px;}.fs100{font-size:100px;}
+
+/*字体行高*/
+
+.lh10{line-height:10px;}.lh11{line-height:11px;}.lh12{line-height:12px;}.lh13{line-height:13px;}.lh14{line-height:14px;}.lh15{line-height:15px;}.lh16{line-height:16px;}.lh17{line-height:17px;}.lh18{line-height:18px;}.lh19{line-height:19px;}.lh20{line-height:20px;}.lh21{line-height:21px;}.lh22{line-height:22px;}.lh23{line-height:23px;}.lh24{line-height:24px;}.lh25{line-height:25px;}.lh26{line-height:26px;}.lh27{line-height:27px;}.lh28{line-height:28px;}.lh29{line-height:29px;}.lh30{line-height:30px;}.lh31{line-height:31px;}.lh32{line-height:32px;}.lh33{line-height:33px;}.lh34{line-height:34px;}.lh35{line-height:35px;}.lh36{line-height:36px;}.lh37{line-height:37px;}.lh38{line-height:38px;}.lh39{line-height:39px;}.lh40{line-height:40px;}.lh41{line-height:41px;}.lh42{line-height:42px;}.lh43{line-height:43px;}.lh44{line-height:44px;}.lh45{line-height:45px;}.lh46{line-height:46px;}.lh47{line-height:47px;}.lh48{line-height:48px;}.lh49{line-height:49px;}.lh50{line-height:50px;}.lh51{line-height:51px;}.lh52{line-height:52px;}.lh53{line-height:53px;}.lh54{line-height:54px;}.lh55{line-height:55px;}.lh56{line-height:56px;}.lh57{line-height:57px;}.lh58{line-height:58px;}.lh59{line-height:59px;}.lh60{line-height:60px;}.lh61{line-height:61px;}.lh62{line-height:62px;}.lh63{line-height:63px;}.lh64{line-height:64px;}.lh65{line-height:65px;}.lh66{line-height:66px;}.lh67{line-height:67px;}.lh68{line-height:68px;}.lh69{line-height:69px;}.lh70{line-height:70px;}.lh71{line-height:71px;}.lh72{line-height:72px;}.lh73{line-height:73px;}.lh74{line-height:74px;}.lh75{line-height:75px;}.lh76{line-height:76px;}.lh77{line-height:77px;}.lh78{line-height:78px;}.lh79{line-height:79px;}.lh80{line-height:80px;}.lh81{line-height:81px;}.lh82{line-height:82px;}.lh83{line-height:83px;}.lh84{line-height:84px;}.lh85{line-height:85px;}.lh86{line-height:86px;}.lh87{line-height:87px;}.lh88{line-height:88px;}.lh89{line-height:89px;}.lh90{line-height:90px;}.lh91{line-height:91px;}.lh92{line-height:92px;}.lh93{line-height:93px;}.lh94{line-height:94px;}.lh95{line-height:95px;}.lh96{line-height:96px;}.lh97{line-height:97px;}.lh98{line-height:98px;}.lh99{line-height:99px;}.lh100{line-height:100px;}
+
+/*absolute 层*/
+
+.zi0{z-index:0;}.zi1{z-index:1;}.zi2{z-index:2;}.zi3{z-index:3;}.zi4{z-index:4;}.zi5{z-index:5;}.zi6{z-index:6;}.zi7{z-index:7;}.zi8{z-index:8;}.zi9{z-index:9;}.zi10{z-index:10;}.zi11{z-index:11;}.zi12{z-index:12;}.zi666{z-index: 666;}.zi777{z-index: 777}.zi888{z-index: 888;}.zi999{z-index: 999}
+
+/*absolute 上*/
+
+.t-20{top:-20px;}.t-19{top:-19px;}.t-18{top:-18px;}.t-17{top:-17px;}.t-16{top:-16px;}.t-15{top:-15px;}.t-14{top:-14px;}.t-13{top:-13px;}.t-12{top:-12px;}.t-11{top:-11px;}.t-10{top:-10px;}.t-9{top:-9px;}.t-8{top:-8px;}.t-7{top:-7px;}.t-6{top:-6px;}.t-5{top:-5px;}.t-4{top:-4px;}.t-3{top:-3px;}.t-2{top:-2px;}.t-1{top:-1px;}.t0{top:0px;}.t1{top:1px;}.t2{top:2px;}.t3{top:3px;}.t4{top:4px;}.t5{top:5px;}.t6{top:6px;}.t7{top:7px;}.t8{top:8px;}.t9{top:9px;}.t10{top:10px;}.t11{top:11px;}.t12{top:12px;}.t13{top:13px;}.t14{top:14px;}.t15{top:15px;}.t16{top:16px;}.t17{top:17px;}.t18{top:18px;}.t19{top:19px;}.t20{top:20px;}.t21{top:21px;}.t22{top:22px;}.t23{top:23px;}.t24{top:24px;}.t25{top:25px;}.t26{top:26px;}.t27{top:27px;}.t28{top:28px;}.t29{top:29px;}.t30{top:30px;}.t31{top:31px;}.t32{top:32px;}.t33{top:33px;}.t34{top:34px;}.t35{top:35px;}.t36{top:36px;}.t37{top:37px;}.t38{top:38px;}.t39{top:39px;}.t40{top:40px;}.t41{top:41px;}.t42{top:42px;}.t43{top:43px;}.t44{top:44px;}.t45{top:45px;}.t46{top:46px;}.t47{top:47px;}.t48{top:48px;}.t49{top:49px;}.t50{top:50px;}.t51{top:51px;}.t52{top:52px;}.t53{top:53px;}.t54{top:54px;}.t55{top:55px;}.t56{top:56px;}.t57{top:57px;}.t58{top:58px;}.t59{top:59px;}.t60{top:60px;}.t61{top:61px;}.t62{top:62px;}.t63{top:63px;}.t64{top:64px;}.t65{top:65px;}.t66{top:66px;}.t67{top:67px;}.t68{top:68px;}.t69{top:69px;}.t70{top:70px;}.t71{top:71px;}.t72{top:72px;}.t73{top:73px;}.t74{top:74px;}.t75{top:75px;}.t76{top:76px;}.t77{top:77px;}.t78{top:78px;}.t79{top:79px;}.t80{top:80px;}.t81{top:81px;}.t82{top:82px;}.t83{top:83px;}.t84{top:84px;}.t85{top:85px;}.t86{top:86px;}.t87{top:87px;}.t88{top:88px;}.t89{top:89px;}.t90{top:90px;}.t91{top:91px;}.t92{top:92px;}.t93{top:93px;}.t94{top:94px;}.t95{top:95px;}.t96{top:96px;}.t97{top:97px;}.t98{top:98px;}.t99{top:99px;}.t100{top:100px;}.t101{top:101px;}.t102{top:102px;}.t103{top:103px;}.t104{top:104px;}.t105{top:105px;}.t106{top:106px;}.t107{top:107px;}.t108{top:108px;}.t109{top:109px;}.t110{top:110px;}.t111{top:111px;}.t112{top:112px;}.t113{top:113px;}.t114{top:114px;}.t115{top:115px;}.t116{top:116px;}.t117{top:117px;}.t118{top:118px;}.t119{top:119px;}.t120{top:120px;}.t121{top:121px;}.t122{top:122px;}.t123{top:123px;}.t124{top:124px;}.t125{top:125px;}.t126{top:126px;}.t127{top:127px;}.t128{top:128px;}.t129{top:129px;}.t130{top:130px;}.t131{top:131px;}.t132{top:132px;}.t133{top:133px;}.t134{top:134px;}.t135{top:135px;}.t136{top:136px;}.t137{top:137px;}.t138{top:138px;}.t139{top:139px;}.t140{top:140px;}.t141{top:141px;}.t142{top:142px;}.t143{top:143px;}.t144{top:144px;}.t145{top:145px;}.t146{top:146px;}.t147{top:147px;}.t148{top:148px;}.t149{top:149px;}.t150{top:150px;}.t151{top:151px;}.t152{top:152px;}.t153{top:153px;}.t154{top:154px;}.t155{top:155px;}.t156{top:156px;}.t157{top:157px;}.t158{top:158px;}.t159{top:159px;}.t160{top:160px;}.t161{top:161px;}.t162{top:162px;}.t163{top:163px;}.t164{top:164px;}.t165{top:165px;}.t166{top:166px;}.t167{top:167px;}.t168{top:168px;}.t169{top:169px;}.t170{top:170px;}.t171{top:171px;}.t172{top:172px;}.t173{top:173px;}.t174{top:174px;}.t175{top:175px;}.t176{top:176px;}.t177{top:177px;}.t178{top:178px;}.t179{top:179px;}.t180{top:180px;}.t181{top:181px;}.t182{top:182px;}.t183{top:183px;}.t184{top:184px;}.t185{top:185px;}.t186{top:186px;}.t187{top:187px;}.t188{top:188px;}.t189{top:189px;}.t190{top:190px;}.t191{top:191px;}.t192{top:192px;}.t193{top:193px;}.t194{top:194px;}.t195{top:195px;}.t196{top:196px;}.t197{top:197px;}.t198{top:198px;}.t199{top:199px;}.t200{top:200px;}
+
+/*absolute 右*/
+
+.r0{right:0px;}.r1{right:1px;}.r2{right:2px;}.r3{right:3px;}.r4{right:4px;}.r5{right:5px;}.r6{right:6px;}.r7{right:7px;}.r8{right:8px;}.r9{right:9px;}.r10{right:10px;}.r11{right:11px;}.r12{right:12px;}.r13{right:13px;}.r14{right:14px;}.r15{right:15px;}.r16{right:16px;}.r17{right:17px;}.r18{right:18px;}.r19{right:19px;}.r20{right:20px;}.r21{right:21px;}.r22{right:22px;}.r23{right:23px;}.r24{right:24px;}.r25{right:25px;}.r26{right:26px;}.r27{right:27px;}.r28{right:28px;}.r29{right:29px;}.r30{right:30px;}.r31{right:31px;}.r32{right:32px;}.r33{right:33px;}.r34{right:34px;}.r35{right:35px;}.r36{right:36px;}.r37{right:37px;}.r38{right:38px;}.r39{right:39px;}.r40{right:40px;}.r41{right:41px;}.r42{right:42px;}.r43{right:43px;}.r44{right:44px;}.r45{right:45px;}.r46{right:46px;}.r47{right:47px;}.r48{right:48px;}.r49{right:49px;}.r50{right:50px;}.r51{right:51px;}.r52{right:52px;}.r53{right:53px;}.r54{right:54px;}.r55{right:55px;}.r56{right:56px;}.r57{right:57px;}.r58{right:58px;}.r59{right:59px;}.r60{right:60px;}.r61{right:61px;}.r62{right:62px;}.r63{right:63px;}.r64{right:64px;}.r65{right:65px;}.r66{right:66px;}.r67{right:67px;}.r68{right:68px;}.r69{right:69px;}.r70{right:70px;}.r71{right:71px;}.r72{right:72px;}.r73{right:73px;}.r74{right:74px;}.r75{right:75px;}.r76{right:76px;}.r77{right:77px;}.r78{right:78px;}.r79{right:79px;}.r80{right:80px;}.r81{right:81px;}.r82{right:82px;}.r83{right:83px;}.r84{right:84px;}.r85{right:85px;}.r86{right:86px;}.r87{right:87px;}.r88{right:88px;}.r89{right:89px;}.r90{right:90px;}.r91{right:91px;}.r92{right:92px;}.r93{right:93px;}.r94{right:94px;}.r95{right:95px;}.r96{right:96px;}.r97{right:97px;}.r98{right:98px;}.r99{right:99px;}.r100{right:100px;}
+
+/*absolute 下*/
+
+.b0{bottom:0px;}.b1{bottom:1px;}.b2{bottom:2px;}.b3{bottom:3px;}.b4{bottom:4px;}.b5{bottom:5px;}.b6{bottom:6px;}.b7{bottom:7px;}.b8{bottom:8px;}.b9{bottom:9px;}.b10{bottom:10px;}.b11{bottom:11px;}.b12{bottom:12px;}.b13{bottom:13px;}.b14{bottom:14px;}.b15{bottom:15px;}.b16{bottom:16px;}.b17{bottom:17px;}.b18{bottom:18px;}.b19{bottom:19px;}.b20{bottom:20px;}.b21{bottom:21px;}.b22{bottom:22px;}.b23{bottom:23px;}.b24{bottom:24px;}.b25{bottom:25px;}.b26{bottom:26px;}.b27{bottom:27px;}.b28{bottom:28px;}.b29{bottom:29px;}.b30{bottom:30px;}.b31{bottom:31px;}.b32{bottom:32px;}.b33{bottom:33px;}.b34{bottom:34px;}.b35{bottom:35px;}.b36{bottom:36px;}.b37{bottom:37px;}.b38{bottom:38px;}.b39{bottom:39px;}.b40{bottom:40px;}.b41{bottom:41px;}.b42{bottom:42px;}.b43{bottom:43px;}.b44{bottom:44px;}.b45{bottom:45px;}.b46{bottom:46px;}.b47{bottom:47px;}.b48{bottom:48px;}.b49{bottom:49px;}.b50{bottom:50px;}.b51{bottom:51px;}.b52{bottom:52px;}.b53{bottom:53px;}.b54{bottom:54px;}.b55{bottom:55px;}.b56{bottom:56px;}.b57{bottom:57px;}.b58{bottom:58px;}.b59{bottom:59px;}.b60{bottom:60px;}.b61{bottom:61px;}.b62{bottom:62px;}.b63{bottom:63px;}.b64{bottom:64px;}.b65{bottom:65px;}.b66{bottom:66px;}.b67{bottom:67px;}.b68{bottom:68px;}.b69{bottom:69px;}.b70{bottom:70px;}.b71{bottom:71px;}.b72{bottom:72px;}.b73{bottom:73px;}.b74{bottom:74px;}.b75{bottom:75px;}.b76{bottom:76px;}.b77{bottom:77px;}.b78{bottom:78px;}.b79{bottom:79px;}.b80{bottom:80px;}.b81{bottom:81px;}.b82{bottom:82px;}.b83{bottom:83px;}.b84{bottom:84px;}.b85{bottom:85px;}.b86{bottom:86px;}.b87{bottom:87px;}.b88{bottom:88px;}.b89{bottom:89px;}.b90{bottom:90px;}.b91{bottom:91px;}.b92{bottom:92px;}.b93{bottom:93px;}.b94{bottom:94px;}.b95{bottom:95px;}.b96{bottom:96px;}.b97{bottom:97px;}.b98{bottom:98px;}.b99{bottom:99px;}.b100{bottom:100px;}
+
+/*absolute 左*/
+
+.l0{left:0px;}.l1{left:1px;}.l2{left:2px;}.l3{left:3px;}.l4{left:4px;}.l5{left:5px;}.l6{left:6px;}.l7{left:7px;}.l8{left:8px;}.l9{left:9px;}.l10{left:10px;}.l11{left:11px;}.l12{left:12px;}.l13{left:13px;}.l14{left:14px;}.l15{left:15px;}.l16{left:16px;}.l17{left:17px;}.l18{left:18px;}.l19{left:19px;}.l20{left:20px;}.l21{left:21px;}.l22{left:22px;}.l23{left:23px;}.l24{left:24px;}.l25{left:25px;}.l26{left:26px;}.l27{left:27px;}.l28{left:28px;}.l29{left:29px;}.l30{left:30px;}.l31{left:31px;}.l32{left:32px;}.l33{left:33px;}.l34{left:34px;}.l35{left:35px;}.l36{left:36px;}.l37{left:37px;}.l38{left:38px;}.l39{left:39px;}.l40{left:40px;}.l41{left:41px;}.l42{left:42px;}.l43{left:43px;}.l44{left:44px;}.l45{left:45px;}.l46{left:46px;}.l47{left:47px;}.l48{left:48px;}.l49{left:49px;}.l50{left:50px;}.l51{left:51px;}.l52{left:52px;}.l53{left:53px;}.l54{left:54px;}.l55{left:55px;}.l56{left:56px;}.l57{left:57px;}.l58{left:58px;}.l59{left:59px;}.l60{left:60px;}.l61{left:61px;}.l62{left:62px;}.l63{left:63px;}.l64{left:64px;}.l65{left:65px;}.l66{left:66px;}.l67{left:67px;}.l68{left:68px;}.l69{left:69px;}.l70{left:70px;}.l71{left:71px;}.l72{left:72px;}.l73{left:73px;}.l74{left:74px;}.l75{left:75px;}.l76{left:76px;}.l77{left:77px;}.l78{left:78px;}.l79{left:79px;}.l80{left:80px;}.l81{left:81px;}.l82{left:82px;}.l83{left:83px;}.l84{left:84px;}.l85{left:85px;}.l86{left:86px;}.l87{left:87px;}.l88{left:88px;}.l89{left:89px;}.l90{left:90px;}.l91{left:91px;}.l92{left:92px;}.l93{left:93px;}.l94{left:94px;}.l95{left:95px;}.l96{left:96px;}.l97{left:97px;}.l98{left:98px;}.l99{left:99px;}.l100{left:100px;}
+
+/*margin居中*/
+
+.m0a{margin:0px auto;}.m1a{margin:1px auto;}.m2a{margin:2px auto;}.m3a{margin:3px auto;}.m4a{margin:4px auto;}.m5a{margin:5px auto;}.m6a{margin:6px auto;}.m7a{margin:7px auto;}.m8a{margin:8px auto;}.m9a{margin:9px auto;}.m10a{margin:10px auto;}.m11a{margin:11px auto;}.m12a{margin:12px auto;}.m13a{margin:13px auto;}.m14a{margin:14px auto;}.m15a{margin:15px auto;}.m16a{margin:16px auto;}.m17a{margin:17px auto;}.m18a{margin:18px auto;}.m19a{margin:19px auto;}.m20a{margin:20px auto;}.m21a{margin:21px auto;}.m22a{margin:22px auto;}.m23a{margin:23px auto;}.m24a{margin:24px auto;}.m25a{margin:25px auto;}.m26a{margin:26px auto;}.m27a{margin:27px auto;}.m28a{margin:28px auto;}.m29a{margin:29px auto;}.m30a{margin:30px auto;}.m31a{margin:31px auto;}.m32a{margin:32px auto;}.m33a{margin:33px auto;}.m34a{margin:34px auto;}.m35a{margin:35px auto;}.m36a{margin:36px auto;}.m37a{margin:37px auto;}.m38a{margin:38px auto;}.m39a{margin:39px auto;}.m40a{margin:40px auto;}.m41a{margin:41px auto;}.m42a{margin:42px auto;}.m43a{margin:43px auto;}.m44a{margin:44px auto;}.m45a{margin:45px auto;}.m46a{margin:46px auto;}.m47a{margin:47px auto;}.m48a{margin:48px auto;}.m49a{margin:49px auto;}.m50a{margin:50px auto;}.m51a{margin:51px auto;}.m52a{margin:52px auto;}.m53a{margin:53px auto;}.m54a{margin:54px auto;}.m55a{margin:55px auto;}.m56a{margin:56px auto;}.m57a{margin:57px auto;}.m58a{margin:58px auto;}.m59a{margin:59px auto;}.m60a{margin:60px auto;}.m61a{margin:61px auto;}.m62a{margin:62px auto;}.m63a{margin:63px auto;}.m64a{margin:64px auto;}.m65a{margin:65px auto;}.m66a{margin:66px auto;}.m67a{margin:67px auto;}.m68a{margin:68px auto;}.m69a{margin:69px auto;}.m70a{margin:70px auto;}.m71a{margin:71px auto;}.m72a{margin:72px auto;}.m73a{margin:73px auto;}.m74a{margin:74px auto;}.m75a{margin:75px auto;}.m76a{margin:76px auto;}.m77a{margin:77px auto;}.m78a{margin:78px auto;}.m79a{margin:79px auto;}.m80a{margin:80px auto;}.m81a{margin:81px auto;}.m82a{margin:82px auto;}.m83a{margin:83px auto;}.m84a{margin:84px auto;}.m85a{margin:85px auto;}.m86a{margin:86px auto;}.m87a{margin:87px auto;}.m88a{margin:88px auto;}.m89a{margin:89px auto;}.m90a{margin:90px auto;}.m91a{margin:91px auto;}.m92a{margin:92px auto;}.m93a{margin:93px auto;}.m94a{margin:94px auto;}.m95a{margin:95px auto;}.m96a{margin:96px auto;}.m97a{margin:97px auto;}.m98a{margin:98px auto;}.m99a{margin:99px auto;}.m100a{margin:100px auto;}
+
+/*margin-上*/
+
+.mt-20{margin-top:-20px;}.mt-19{margin-top:-19px;}.mt-18{margin-top:-18px;}.mt-17{margin-top:-17px;}.mt-16{margin-top:-16px;}.mt-15{margin-top:-15px;}.mt-14{margin-top:-14px;}.mt-13{margin-top:-13px;}.mt-12{margin-top:-12px;}.mt-11{margin-top:-11px;}.mt-10{margin-top:-10px;}.mt-9{margin-top:-9px;}.mt-8{margin-top:-8px;}.mt-7{margin-top:-7px;}.mt-6{margin-top:-6px;}.mt-5{margin-top:-5px;}.mt-4{margin-top:-4px;}.mt-3{margin-top:-3px;}.mt-2{margin-top:-2px;}.mt-1{margin-top:-1px;}.mt0{margin-top:0px;}.mt1{margin-top:1px;}.mt2{margin-top:2px;}.mt3{margin-top:3px;}.mt4{margin-top:4px;}.mt5{margin-top:5px;}.mt6{margin-top:6px;}.mt7{margin-top:7px;}.mt8{margin-top:8px;}.mt9{margin-top:9px;}.mt10{margin-top:10px;}.mt11{margin-top:11px;}.mt12{margin-top:12px;}.mt13{margin-top:13px;}.mt14{margin-top:14px;}.mt15{margin-top:15px;}.mt16{margin-top:16px;}.mt17{margin-top:17px;}.mt18{margin-top:18px;}.mt19{margin-top:19px;}.mt20{margin-top:20px;}.mt21{margin-top:21px;}.mt22{margin-top:22px;}.mt23{margin-top:23px;}.mt24{margin-top:24px;}.mt25{margin-top:25px;}.mt26{margin-top:26px;}.mt27{margin-top:27px;}.mt28{margin-top:28px;}.mt29{margin-top:29px;}.mt30{margin-top:30px;}.mt31{margin-top:31px;}.mt32{margin-top:32px;}.mt33{margin-top:33px;}.mt34{margin-top:34px;}.mt35{margin-top:35px;}.mt36{margin-top:36px;}.mt37{margin-top:37px;}.mt38{margin-top:38px;}.mt39{margin-top:39px;}.mt40{margin-top:40px;}.mt41{margin-top:41px;}.mt42{margin-top:42px;}.mt43{margin-top:43px;}.mt44{margin-top:44px;}.mt45{margin-top:45px;}.mt46{margin-top:46px;}.mt47{margin-top:47px;}.mt48{margin-top:48px;}.mt49{margin-top:49px;}.mt50{margin-top:50px;}.mt51{margin-top:51px;}.mt52{margin-top:52px;}.mt53{margin-top:53px;}.mt54{margin-top:54px;}.mt55{margin-top:55px;}.mt56{margin-top:56px;}.mt57{margin-top:57px;}.mt58{margin-top:58px;}.mt59{margin-top:59px;}.mt60{margin-top:60px;}.mt61{margin-top:61px;}.mt62{margin-top:62px;}.mt63{margin-top:63px;}.mt64{margin-top:64px;}.mt65{margin-top:65px;}.mt66{margin-top:66px;}.mt67{margin-top:67px;}.mt68{margin-top:68px;}.mt69{margin-top:69px;}.mt70{margin-top:70px;}.mt71{margin-top:71px;}.mt72{margin-top:72px;}.mt73{margin-top:73px;}.mt74{margin-top:74px;}.mt75{margin-top:75px;}.mt76{margin-top:76px;}.mt77{margin-top:77px;}.mt78{margin-top:78px;}.mt79{margin-top:79px;}.mt80{margin-top:80px;}.mt81{margin-top:81px;}.mt82{margin-top:82px;}.mt83{margin-top:83px;}.mt84{margin-top:84px;}.mt85{margin-top:85px;}.mt86{margin-top:86px;}.mt87{margin-top:87px;}.mt88{margin-top:88px;}.mt89{margin-top:89px;}.mt90{margin-top:90px;}.mt91{margin-top:91px;}.mt92{margin-top:92px;}.mt93{margin-top:93px;}.mt94{margin-top:94px;}.mt95{margin-top:95px;}.mt96{margin-top:96px;}.mt97{margin-top:97px;}.mt98{margin-top:98px;}.mt99{margin-top:99px;}.mt100{margin-top:100px;}
+
+/*margin-右*/
+
+.mr0{margin-right: 0 !important;}.mr1{margin-right:1px;}.mr2{margin-right:2px;}.mr3{margin-right:3px;}.mr4{margin-right:4px;}.mr5{margin-right:5px;}.mr6{margin-right:6px;}.mr7{margin-right:7px;}.mr8{margin-right:8px;}.mr9{margin-right:9px;}.mr10{margin-right:10px;}.mr11{margin-right:11px;}.mr12{margin-right:12px;}.mr13{margin-right:13px;}.mr14{margin-right:14px;}.mr15{margin-right:15px;}.mr16{margin-right:16px;}.mr17{margin-right:17px;}.mr18{margin-right:18px;}.mr19{margin-right:19px;}.mr20{margin-right:20px;}.mr21{margin-right:21px;}.mr22{margin-right:22px;}.mr23{margin-right:23px;}.mr24{margin-right:24px;}.mr25{margin-right:25px;}.mr26{margin-right:26px;}.mr27{margin-right:27px;}.mr28{margin-right:28px;}.mr29{margin-right:29px;}.mr30{margin-right:30px;}.mr31{margin-right:31px;}.mr32{margin-right:32px;}.mr33{margin-right:33px;}.mr34{margin-right:34px;}.mr35{margin-right:35px;}.mr36{margin-right:36px;}.mr37{margin-right:37px;}.mr38{margin-right:38px;}.mr39{margin-right:39px;}.mr40{margin-right:40px;}.mr41{margin-right:41px;}.mr42{margin-right:42px;}.mr43{margin-right:43px;}.mr44{margin-right:44px;}.mr45{margin-right:45px;}.mr46{margin-right:46px;}.mr47{margin-right:47px;}.mr48{margin-right:48px;}.mr49{margin-right:49px;}.mr50{margin-right:50px;}.mr51{margin-right:51px;}.mr52{margin-right:52px;}.mr53{margin-right:53px;}.mr54{margin-right:54px;}.mr55{margin-right:55px;}.mr56{margin-right:56px;}.mr57{margin-right:57px;}.mr58{margin-right:58px;}.mr59{margin-right:59px;}.mr60{margin-right:60px;}.mr61{margin-right:61px;}.mr62{margin-right:62px;}.mr63{margin-right:63px;}.mr64{margin-right:64px;}.mr65{margin-right:65px;}.mr66{margin-right:66px;}.mr67{margin-right:67px;}.mr68{margin-right:68px;}.mr69{margin-right:69px;}.mr70{margin-right:70px;}.mr71{margin-right:71px;}.mr72{margin-right:72px;}.mr73{margin-right:73px;}.mr74{margin-right:74px;}.mr75{margin-right:75px;}.mr76{margin-right:76px;}.mr77{margin-right:77px;}.mr78{margin-right:78px;}.mr79{margin-right:79px;}.mr80{margin-right:80px;}.mr81{margin-right:81px;}.mr82{margin-right:82px;}.mr83{margin-right:83px;}.mr84{margin-right:84px;}.mr85{margin-right:85px;}.mr86{margin-right:86px;}.mr87{margin-right:87px;}.mr88{margin-right:88px;}.mr89{margin-right:89px;}.mr90{margin-right:90px;}.mr91{margin-right:91px;}.mr92{margin-right:92px;}.mr93{margin-right:93px;}.mr94{margin-right:94px;}.mr95{margin-right:95px;}.mr96{margin-right:96px;}.mr97{margin-right:97px;}.mr98{margin-right:98px;}.mr99{margin-right:99px;}.mr100{margin-right:100px;}
+
+/*margin-下*/
+
+.mb1{margin-bottom:1px;}.mb2{margin-bottom:2px;}.mb3{margin-bottom:3px;}.mb4{margin-bottom:4px;}.mb5{margin-bottom:5px;}.mb6{margin-bottom:6px;}.mb7{margin-bottom:7px;}.mb8{margin-bottom:8px;}.mb9{margin-bottom:9px;}.mb10{margin-bottom:10px;}.mb11{margin-bottom:11px;}.mb12{margin-bottom:12px;}.mb13{margin-bottom:13px;}.mb14{margin-bottom:14px;}.mb15{margin-bottom:15px;}.mb16{margin-bottom:16px;}.mb17{margin-bottom:17px;}.mb18{margin-bottom:18px;}.mb19{margin-bottom:19px;}.mb20{margin-bottom:20px;}.mb21{margin-bottom:21px;}.mb22{margin-bottom:22px;}.mb23{margin-bottom:23px;}.mb24{margin-bottom:24px;}.mb25{margin-bottom:25px;}.mb26{margin-bottom:26px;}.mb27{margin-bottom:27px;}.mb28{margin-bottom:28px;}.mb29{margin-bottom:29px;}.mb30{margin-bottom:30px;}.mb31{margin-bottom:31px;}.mb32{margin-bottom:32px;}.mb33{margin-bottom:33px;}.mb34{margin-bottom:34px;}.mb35{margin-bottom:35px;}.mb36{margin-bottom:36px;}.mb37{margin-bottom:37px;}.mb38{margin-bottom:38px;}.mb39{margin-bottom:39px;}.mb40{margin-bottom:40px;}.mb41{margin-bottom:41px;}.mb42{margin-bottom:42px;}.mb43{margin-bottom:43px;}.mb44{margin-bottom:44px;}.mb45{margin-bottom:45px;}.mb46{margin-bottom:46px;}.mb47{margin-bottom:47px;}.mb48{margin-bottom:48px;}.mb49{margin-bottom:49px;}.mb50{margin-bottom:50px;}.mb51{margin-bottom:51px;}.mb52{margin-bottom:52px;}.mb53{margin-bottom:53px;}.mb54{margin-bottom:54px;}.mb55{margin-bottom:55px;}.mb56{margin-bottom:56px;}.mb57{margin-bottom:57px;}.mb58{margin-bottom:58px;}.mb59{margin-bottom:59px;}.mb60{margin-bottom:60px;}.mb61{margin-bottom:61px;}.mb62{margin-bottom:62px;}.mb63{margin-bottom:63px;}.mb64{margin-bottom:64px;}.mb65{margin-bottom:65px;}.mb66{margin-bottom:66px;}.mb67{margin-bottom:67px;}.mb68{margin-bottom:68px;}.mb69{margin-bottom:69px;}.mb70{margin-bottom:70px;}.mb71{margin-bottom:71px;}.mb72{margin-bottom:72px;}.mb73{margin-bottom:73px;}.mb74{margin-bottom:74px;}.mb75{margin-bottom:75px;}.mb76{margin-bottom:76px;}.mb77{margin-bottom:77px;}.mb78{margin-bottom:78px;}.mb79{margin-bottom:79px;}.mb80{margin-bottom:80px;}.mb81{margin-bottom:81px;}.mb82{margin-bottom:82px;}.mb83{margin-bottom:83px;}.mb84{margin-bottom:84px;}.mb85{margin-bottom:85px;}.mb86{margin-bottom:86px;}.mb87{margin-bottom:87px;}.mb88{margin-bottom:88px;}.mb89{margin-bottom:89px;}.mb90{margin-bottom:90px;}.mb91{margin-bottom:91px;}.mb92{margin-bottom:92px;}.mb93{margin-bottom:93px;}.mb94{margin-bottom:94px;}.mb95{margin-bottom:95px;}.mb96{margin-bottom:96px;}.mb97{margin-bottom:97px;}.mb98{margin-bottom:98px;}.mb99{margin-bottom:99px;}.mb100{margin-bottom:100px;}
+
+/*margin-左*/
+
+.ml-20{margin-left:-20px;}.ml-19{margin-left:-19px;}.ml-18{margin-left:-18px;}.ml-17{margin-left:-17px;}.ml-16{margin-left:-16px;}.ml-15{margin-left:-15px;}.ml-14{margin-left:-14px;}.ml-13{margin-left:-13px;}.ml-12{margin-left:-12px;}.ml-11{margin-left:-11px;}.ml-10{margin-left:-10px;}.ml-9{margin-left:-9px;}.ml-8{margin-left:-8px;}.ml-7{margin-left:-7px;}.ml-6{margin-left:-6px;}.ml-5{margin-left:-5px;}.ml-4{margin-left:-4px;}.ml-3{margin-left:-3px;}.ml-2{margin-left:-2px;}.ml-1{margin-left:-1px;}.ml0{margin-left:0px;}.ml1{margin-left:1px;}.ml2{margin-left:2px;}.ml3{margin-left:3px;}.ml4{margin-left:4px;}.ml5{margin-left:5px;}.ml6{margin-left:6px;}.ml7{margin-left:7px;}.ml8{margin-left:8px;}.ml9{margin-left:9px;}.ml10{margin-left:10px;}.ml11{margin-left:11px;}.ml12{margin-left:12px;}.ml13{margin-left:13px;}.ml14{margin-left:14px;}.ml15{margin-left:15px;}.ml16{margin-left:16px;}.ml17{margin-left:17px;}.ml18{margin-left:18px;}.ml19{margin-left:19px;}.ml20{margin-left:20px;}.ml21{margin-left:21px;}.ml22{margin-left:22px;}.ml23{margin-left:23px;}.ml24{margin-left:24px;}.ml25{margin-left:25px;}.ml26{margin-left:26px;}.ml27{margin-left:27px;}.ml28{margin-left:28px;}.ml29{margin-left:29px;}.ml30{margin-left:30px;}.ml31{margin-left:31px;}.ml32{margin-left:32px;}.ml33{margin-left:33px;}.ml34{margin-left:34px;}.ml35{margin-left:35px;}.ml36{margin-left:36px;}.ml37{margin-left:37px;}.ml38{margin-left:38px;}.ml39{margin-left:39px;}.ml40{margin-left:40px;}.ml41{margin-left:41px;}.ml42{margin-left:42px;}.ml43{margin-left:43px;}.ml44{margin-left:44px;}.ml45{margin-left:45px;}.ml46{margin-left:46px;}.ml47{margin-left:47px;}.ml48{margin-left:48px;}.ml49{margin-left:49px;}.ml50{margin-left:50px;}.ml51{margin-left:51px;}.ml52{margin-left:52px;}.ml53{margin-left:53px;}.ml54{margin-left:54px;}.ml55{margin-left:55px;}.ml56{margin-left:56px;}.ml57{margin-left:57px;}.ml58{margin-left:58px;}.ml59{margin-left:59px;}.ml60{margin-left:60px;}.ml61{margin-left:61px;}.ml62{margin-left:62px;}.ml63{margin-left:63px;}.ml64{margin-left:64px;}.ml65{margin-left:65px;}.ml66{margin-left:66px;}.ml67{margin-left:67px;}.ml68{margin-left:68px;}.ml69{margin-left:69px;}.ml70{margin-left:70px;}.ml71{margin-left:71px;}.ml72{margin-left:72px;}.ml73{margin-left:73px;}.ml74{margin-left:74px;}.ml75{margin-left:75px;}.ml76{margin-left:76px;}.ml77{margin-left:77px;}.ml78{margin-left:78px;}.ml79{margin-left:79px;}.ml80{margin-left:80px;}.ml81{margin-left:81px;}.ml82{margin-left:82px;}.ml83{margin-left:83px;}.ml84{margin-left:84px;}.ml85{margin-left:85px;}.ml86{margin-left:86px;}.ml87{margin-left:87px;}.ml88{margin-left:88px;}.ml89{margin-left:89px;}.ml90{margin-left:90px;}.ml91{margin-left:91px;}.ml92{margin-left:92px;}.ml93{margin-left:93px;}.ml94{margin-left:94px;}.ml95{margin-left:95px;}.ml96{margin-left:96px;}.ml97{margin-left:97px;}.ml98{margin-left:98px;}.ml99{margin-left:99px;}.ml100{margin-left:100px;}
+
+/*padding-上*/
+
+.pt1{padding-top:1px;}.pt2{padding-top:2px;}.pt3{padding-top:3px;}.pt4{padding-top:4px;}.pt5{padding-top:5px;}.pt6{padding-top:6px;}.pt7{padding-top:7px;}.pt8{padding-top:8px;}.pt9{padding-top:9px;}.pt10{padding-top:10px;}.pt11{padding-top:11px;}.pt12{padding-top:12px;}.pt13{padding-top:13px;}.pt14{padding-top:14px;}.pt15{padding-top:15px;}.pt16{padding-top:16px;}.pt17{padding-top:17px;}.pt18{padding-top:18px;}.pt19{padding-top:19px;}.pt20{padding-top:20px;}.pt21{padding-top:21px;}.pt22{padding-top:22px;}.pt23{padding-top:23px;}.pt24{padding-top:24px;}.pt25{padding-top:25px;}.pt26{padding-top:26px;}.pt27{padding-top:27px;}.pt28{padding-top:28px;}.pt29{padding-top:29px;}.pt30{padding-top:30px;}.pt31{padding-top:31px;}.pt32{padding-top:32px;}.pt33{padding-top:33px;}.pt34{padding-top:34px;}.pt35{padding-top:35px;}.pt36{padding-top:36px;}.pt37{padding-top:37px;}.pt38{padding-top:38px;}.pt39{padding-top:39px;}.pt40{padding-top:40px;}.pt41{padding-top:41px;}.pt42{padding-top:42px;}.pt43{padding-top:43px;}.pt44{padding-top:44px;}.pt45{padding-top:45px;}.pt46{padding-top:46px;}.pt47{padding-top:47px;}.pt48{padding-top:48px;}.pt49{padding-top:49px;}.pt50{padding-top:50px;}.pt51{padding-top:51px;}.pt52{padding-top:52px;}.pt53{padding-top:53px;}.pt54{padding-top:54px;}.pt55{padding-top:55px;}.pt56{padding-top:56px;}.pt57{padding-top:57px;}.pt58{padding-top:58px;}.pt59{padding-top:59px;}.pt60{padding-top:60px;}.pt61{padding-top:61px;}.pt62{padding-top:62px;}.pt63{padding-top:63px;}.pt64{padding-top:64px;}.pt65{padding-top:65px;}.pt66{padding-top:66px;}.pt67{padding-top:67px;}.pt68{padding-top:68px;}.pt69{padding-top:69px;}.pt70{padding-top:70px;}.pt71{padding-top:71px;}.pt72{padding-top:72px;}.pt73{padding-top:73px;}.pt74{padding-top:74px;}.pt75{padding-top:75px;}.pt76{padding-top:76px;}.pt77{padding-top:77px;}.pt78{padding-top:78px;}.pt79{padding-top:79px;}.pt80{padding-top:80px;}.pt81{padding-top:81px;}.pt82{padding-top:82px;}.pt83{padding-top:83px;}.pt84{padding-top:84px;}.pt85{padding-top:85px;}.pt86{padding-top:86px;}.pt87{padding-top:87px;}.pt88{padding-top:88px;}.pt89{padding-top:89px;}.pt90{padding-top:90px;}.pt91{padding-top:91px;}.pt92{padding-top:92px;}.pt93{padding-top:93px;}.pt94{padding-top:94px;}.pt95{padding-top:95px;}.pt96{padding-top:96px;}.pt97{padding-top:97px;}.pt98{padding-top:98px;}.pt99{padding-top:99px;}.pt100{padding-top:100px;}.pt101{padding-top:101px;}.pt102{padding-top:102px;}.pt103{padding-top:103px;}.pt104{padding-top:104px;}.pt105{padding-top:105px;}.pt106{padding-top:106px;}.pt107{padding-top:107px;}.pt108{padding-top:108px;}.pt109{padding-top:109px;}.pt110{padding-top:110px;}.pt111{padding-top:111px;}.pt112{padding-top:112px;}.pt113{padding-top:113px;}.pt114{padding-top:114px;}.pt115{padding-top:115px;}.pt116{padding-top:116px;}.pt117{padding-top:117px;}.pt118{padding-top:118px;}.pt119{padding-top:119px;}.pt120{padding-top:120px;}.pt121{padding-top:121px;}.pt122{padding-top:122px;}.pt123{padding-top:123px;}.pt124{padding-top:124px;}.pt125{padding-top:125px;}.pt126{padding-top:126px;}.pt127{padding-top:127px;}.pt128{padding-top:128px;}.pt129{padding-top:129px;}.pt130{padding-top:130px;}.pt131{padding-top:131px;}.pt132{padding-top:132px;}.pt133{padding-top:133px;}.pt134{padding-top:134px;}.pt135{padding-top:135px;}.pt136{padding-top:136px;}.pt137{padding-top:137px;}.pt138{padding-top:138px;}.pt139{padding-top:139px;}.pt140{padding-top:140px;}.pt141{padding-top:141px;}.pt142{padding-top:142px;}.pt143{padding-top:143px;}.pt144{padding-top:144px;}.pt145{padding-top:145px;}.pt146{padding-top:146px;}.pt147{padding-top:147px;}.pt148{padding-top:148px;}.pt149{padding-top:149px;}.pt150{padding-top:150px;}.pt151{padding-top:151px;}.pt152{padding-top:152px;}.pt153{padding-top:153px;}.pt154{padding-top:154px;}.pt155{padding-top:155px;}.pt156{padding-top:156px;}.pt157{padding-top:157px;}.pt158{padding-top:158px;}.pt159{padding-top:159px;}.pt160{padding-top:160px;}.pt161{padding-top:161px;}.pt162{padding-top:162px;}.pt163{padding-top:163px;}.pt164{padding-top:164px;}.pt165{padding-top:165px;}.pt166{padding-top:166px;}.pt167{padding-top:167px;}.pt168{padding-top:168px;}.pt169{padding-top:169px;}.pt170{padding-top:170px;}.pt171{padding-top:171px;}.pt172{padding-top:172px;}.pt173{padding-top:173px;}.pt174{padding-top:174px;}.pt175{padding-top:175px;}.pt176{padding-top:176px;}.pt177{padding-top:177px;}.pt178{padding-top:178px;}.pt179{padding-top:179px;}.pt180{padding-top:180px;}.pt181{padding-top:181px;}.pt182{padding-top:182px;}.pt183{padding-top:183px;}.pt184{padding-top:184px;}.pt185{padding-top:185px;}.pt186{padding-top:186px;}.pt187{padding-top:187px;}.pt188{padding-top:188px;}.pt189{padding-top:189px;}.pt190{padding-top:190px;}.pt191{padding-top:191px;}.pt192{padding-top:192px;}.pt193{padding-top:193px;}.pt194{padding-top:194px;}.pt195{padding-top:195px;}.pt196{padding-top:196px;}.pt197{padding-top:197px;}.pt198{padding-top:198px;}.pt199{padding-top:199px;}.pt200{padding-top:200px;}
+
+/*padding-右*/
+
+.pr1{padding-right:1px;}.pr2{padding-right:2px;}.pr3{padding-right:3px;}.pr4{padding-right:4px;}.pr5{padding-right:5px;}.pr6{padding-right:6px;}.pr7{padding-right:7px;}.pr8{padding-right:8px;}.pr9{padding-right:9px;}.pr10{padding-right:10px;}.pr11{padding-right:11px;}.pr12{padding-right:12px;}.pr13{padding-right:13px;}.pr14{padding-right:14px;}.pr15{padding-right:15px;}.pr16{padding-right:16px;}.pr17{padding-right:17px;}.pr18{padding-right:18px;}.pr19{padding-right:19px;}.pr20{padding-right:20px;}.pr21{padding-right:21px;}.pr22{padding-right:22px;}.pr23{padding-right:23px;}.pr24{padding-right:24px;}.pr25{padding-right:25px;}.pr26{padding-right:26px;}.pr27{padding-right:27px;}.pr28{padding-right:28px;}.pr29{padding-right:29px;}.pr30{padding-right:30px;}.pr31{padding-right:31px;}.pr32{padding-right:32px;}.pr33{padding-right:33px;}.pr34{padding-right:34px;}.pr35{padding-right:35px;}.pr36{padding-right:36px;}.pr37{padding-right:37px;}.pr38{padding-right:38px;}.pr39{padding-right:39px;}.pr40{padding-right:40px;}.pr41{padding-right:41px;}.pr42{padding-right:42px;}.pr43{padding-right:43px;}.pr44{padding-right:44px;}.pr45{padding-right:45px;}.pr46{padding-right:46px;}.pr47{padding-right:47px;}.pr48{padding-right:48px;}.pr49{padding-right:49px;}.pr50{padding-right:50px;}.pr51{padding-right:51px;}.pr52{padding-right:52px;}.pr53{padding-right:53px;}.pr54{padding-right:54px;}.pr55{padding-right:55px;}.pr56{padding-right:56px;}.pr57{padding-right:57px;}.pr58{padding-right:58px;}.pr59{padding-right:59px;}.pr60{padding-right:60px;}.pr61{padding-right:61px;}.pr62{padding-right:62px;}.pr63{padding-right:63px;}.pr64{padding-right:64px;}.pr65{padding-right:65px;}.pr66{padding-right:66px;}.pr67{padding-right:67px;}.pr68{padding-right:68px;}.pr69{padding-right:69px;}.pr70{padding-right:70px;}.pr71{padding-right:71px;}.pr72{padding-right:72px;}.pr73{padding-right:73px;}.pr74{padding-right:74px;}.pr75{padding-right:75px;}.pr76{padding-right:76px;}.pr77{padding-right:77px;}.pr78{padding-right:78px;}.pr79{padding-right:79px;}.pr80{padding-right:80px;}.pr81{padding-right:81px;}.pr82{padding-right:82px;}.pr83{padding-right:83px;}.pr84{padding-right:84px;}.pr85{padding-right:85px;}.pr86{padding-right:86px;}.pr87{padding-right:87px;}.pr88{padding-right:88px;}.pr89{padding-right:89px;}.pr90{padding-right:90px;}.pr91{padding-right:91px;}.pr92{padding-right:92px;}.pr93{padding-right:93px;}.pr94{padding-right:94px;}.pr95{padding-right:95px;}.pr96{padding-right:96px;}.pr97{padding-right:97px;}.pr98{padding-right:98px;}.pr99{padding-right:99px;}.pr100{padding-right:100px;}
+
+/*padding-下*/
+
+.pb1{padding-bottom:1px;}.pb2{padding-bottom:2px;}.pb3{padding-bottom:3px;}.pb4{padding-bottom:4px;}.pb5{padding-bottom:5px;}.pb6{padding-bottom:6px;}.pb7{padding-bottom:7px;}.pb8{padding-bottom:8px;}.pb9{padding-bottom:9px;}.pb10{padding-bottom:10px;}.pb11{padding-bottom:11px;}.pb12{padding-bottom:12px;}.pb13{padding-bottom:13px;}.pb14{padding-bottom:14px;}.pb15{padding-bottom:15px;}.pb16{padding-bottom:16px;}.pb17{padding-bottom:17px;}.pb18{padding-bottom:18px;}.pb19{padding-bottom:19px;}.pb20{padding-bottom:20px;}.pb21{padding-bottom:21px;}.pb22{padding-bottom:22px;}.pb23{padding-bottom:23px;}.pb24{padding-bottom:24px;}.pb25{padding-bottom:25px;}.pb26{padding-bottom:26px;}.pb27{padding-bottom:27px;}.pb28{padding-bottom:28px;}.pb29{padding-bottom:29px;}.pb30{padding-bottom:30px;}.pb31{padding-bottom:31px;}.pb32{padding-bottom:32px;}.pb33{padding-bottom:33px;}.pb34{padding-bottom:34px;}.pb35{padding-bottom:35px;}.pb36{padding-bottom:36px;}.pb37{padding-bottom:37px;}.pb38{padding-bottom:38px;}.pb39{padding-bottom:39px;}.pb40{padding-bottom:40px;}.pb41{padding-bottom:41px;}.pb42{padding-bottom:42px;}.pb43{padding-bottom:43px;}.pb44{padding-bottom:44px;}.pb45{padding-bottom:45px;}.pb46{padding-bottom:46px;}.pb47{padding-bottom:47px;}.pb48{padding-bottom:48px;}.pb49{padding-bottom:49px;}.pb50{padding-bottom:50px;}.pb51{padding-bottom:51px;}.pb52{padding-bottom:52px;}.pb53{padding-bottom:53px;}.pb54{padding-bottom:54px;}.pb55{padding-bottom:55px;}.pb56{padding-bottom:56px;}.pb57{padding-bottom:57px;}.pb58{padding-bottom:58px;}.pb59{padding-bottom:59px;}.pb60{padding-bottom:60px;}.pb61{padding-bottom:61px;}.pb62{padding-bottom:62px;}.pb63{padding-bottom:63px;}.pb64{padding-bottom:64px;}.pb65{padding-bottom:65px;}.pb66{padding-bottom:66px;}.pb67{padding-bottom:67px;}.pb68{padding-bottom:68px;}.pb69{padding-bottom:69px;}.pb70{padding-bottom:70px;}.pb71{padding-bottom:71px;}.pb72{padding-bottom:72px;}.pb73{padding-bottom:73px;}.pb74{padding-bottom:74px;}.pb75{padding-bottom:75px;}.pb76{padding-bottom:76px;}.pb77{padding-bottom:77px;}.pb78{padding-bottom:78px;}.pb79{padding-bottom:79px;}.pb80{padding-bottom:80px;}.pb81{padding-bottom:81px;}.pb82{padding-bottom:82px;}.pb83{padding-bottom:83px;}.pb84{padding-bottom:84px;}.pb85{padding-bottom:85px;}.pb86{padding-bottom:86px;}.pb87{padding-bottom:87px;}.pb88{padding-bottom:88px;}.pb89{padding-bottom:89px;}.pb90{padding-bottom:90px;}.pb91{padding-bottom:91px;}.pb92{padding-bottom:92px;}.pb93{padding-bottom:93px;}.pb94{padding-bottom:94px;}.pb95{padding-bottom:95px;}.pb96{padding-bottom:96px;}.pb97{padding-bottom:97px;}.pb98{padding-bottom:98px;}.pb99{padding-bottom:99px;}.pb100{padding-bottom:100px;}
+
+/*padding-左*/
+
+.pl1{padding-left:1px;}.pl2{padding-left:2px;}.pl3{padding-left:3px;}.pl4{padding-left:4px;}.pl5{padding-left:5px;}.pl6{padding-left:6px;}.pl7{padding-left:7px;}.pl8{padding-left:8px;}.pl9{padding-left:9px;}.pl10{padding-left:10px;}.pl11{padding-left:11px;}.pl12{padding-left:12px;}.pl13{padding-left:13px;}.pl14{padding-left:14px;}.pl15{padding-left:15px;}.pl16{padding-left:16px;}.pl17{padding-left:17px;}.pl18{padding-left:18px;}.pl19{padding-left:19px;}.pl20{padding-left:20px;}.pl21{padding-left:21px;}.pl22{padding-left:22px;}.pl23{padding-left:23px;}.pl24{padding-left:24px;}.pl25{padding-left:25px;}.pl26{padding-left:26px;}.pl27{padding-left:27px;}.pl28{padding-left:28px;}.pl29{padding-left:29px;}.pl30{padding-left:30px;}.pl31{padding-left:31px;}.pl32{padding-left:32px;}.pl33{padding-left:33px;}.pl34{padding-left:34px;}.pl35{padding-left:35px;}.pl36{padding-left:36px;}.pl37{padding-left:37px;}.pl38{padding-left:38px;}.pl39{padding-left:39px;}.pl40{padding-left:40px;}.pl41{padding-left:41px;}.pl42{padding-left:42px;}.pl43{padding-left:43px;}.pl44{padding-left:44px;}.pl45{padding-left:45px;}.pl46{padding-left:46px;}.pl47{padding-left:47px;}.pl48{padding-left:48px;}.pl49{padding-left:49px;}.pl50{padding-left:50px;}.pl51{padding-left:51px;}.pl52{padding-left:52px;}.pl53{padding-left:53px;}.pl54{padding-left:54px;}.pl55{padding-left:55px;}.pl56{padding-left:56px;}.pl57{padding-left:57px;}.pl58{padding-left:58px;}.pl59{padding-left:59px;}.pl60{padding-left:60px;}.pl61{padding-left:61px;}.pl62{padding-left:62px;}.pl63{padding-left:63px;}.pl64{padding-left:64px;}.pl65{padding-left:65px;}.pl66{padding-left:66px;}.pl67{padding-left:67px;}.pl68{padding-left:68px;}.pl69{padding-left:69px;}.pl70{padding-left:70px;}.pl71{padding-left:71px;}.pl72{padding-left:72px;}.pl73{padding-left:73px;}.pl74{padding-left:74px;}.pl75{padding-left:75px;}.pl76{padding-left:76px;}.pl77{padding-left:77px;}.pl78{padding-left:78px;}.pl79{padding-left:79px;}.pl80{padding-left:80px;}.pl81{padding-left:81px;}.pl82{padding-left:82px;}.pl83{padding-left:83px;}.pl84{padding-left:84px;}.pl85{padding-left:85px;}.pl86{padding-left:86px;}.pl87{padding-left:87px;}.pl88{padding-left:88px;}.pl89{padding-left:89px;}.pl90{padding-left:90px;}.pl91{padding-left:91px;}.pl92{padding-left:92px;}.pl93{padding-left:93px;}.pl94{padding-left:94px;}.pl95{padding-left:95px;}.pl96{padding-left:96px;}.pl97{padding-left:97px;}.pl98{padding-left:98px;}.pl99{padding-left:99px;}.pl100{padding-left:100px;}
+
+/*Hover.css (http://ianlunn.github.io/Hover/)*/
+
+/* Grow */
+
+.hvr-grow { display: inline-block; vertical-align: middle; -webkit-transform: translateZ(0); transform: translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0); -webkit-backface-visibility: hidden; backface-visibility: hidden; -moz-osx-font-smoothing: grayscale; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-property: transform; transition-property: transform; } .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active { -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+/* Float */
+
+.hvr-float { display: inline-block; vertical-align: middle; -webkit-transform: translateZ(0); transform: translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0); -webkit-backface-visibility: hidden; backface-visibility: hidden; -moz-osx-font-smoothing: grayscale; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; -webkit-transition-property: transform; transition-property: transform; -webkit-transition-timing-function: ease-out; transition-timing-function: ease-out; } .hvr-float:hover, .hvr-float:focus, .hvr-float:active { -webkit-transform: translateY(-6px); transform: translateY(-6px); }
+
+/* Wobble Top */
+
+@-webkit-keyframes hvr-wobble-top { 16.65% { -webkit-transform: skew(-12deg); transform: skew(-12deg); }  33.3% { -webkit-transform: skew(10deg); transform: skew(10deg); }  49.95% { -webkit-transform: skew(-6deg); transform: skew(-6deg); }  66.6% { -webkit-transform: skew(4deg); transform: skew(4deg); }  83.25% { -webkit-transform: skew(-2deg); transform: skew(-2deg); }  100% { -webkit-transform: skew(0); transform: skew(0); } }  @keyframes hvr-wobble-top { 16.65% { -webkit-transform: skew(-12deg); transform: skew(-12deg); }  33.3% { -webkit-transform: skew(10deg); transform: skew(10deg); }  49.95% { -webkit-transform: skew(-6deg); transform: skew(-6deg); }  66.6% { -webkit-transform: skew(4deg); transform: skew(4deg); }  83.25% { -webkit-transform: skew(-2deg); transform: skew(-2deg); }  100% { -webkit-transform: skew(0); transform: skew(0); } }  .hvr-wobble-top { display: inline-block; vertical-align: middle; -webkit-transform: translateZ(0); transform: translateZ(0); box-shadow: 0 0 1px rgba(0, 0, 0, 0); -webkit-backface-visibility: hidden; backface-visibility: hidden; -moz-osx-font-smoothing: grayscale; -webkit-transform-origin: 0 100%; transform-origin: 0 100%; } .hvr-wobble-top:hover, .hvr-wobble-top:focus, .hvr-wobble-top:active { -webkit-animation-name: hvr-wobble-top; animation-name: hvr-wobble-top; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; }
+
+/*apple字体*/
+@font-face{
+    font-family: STHeiti-Light;
+    src:url('../font/STHeiti-Light.ttf');
+}
+
+/*字体*/
+.ffm{font-family: sans-serif, Arial;}
+.ffsl{font-family: STHeiti-Light;}
+.ffs{font-family: SimSun;}
+
+
+
+
+
+�Am�w      ^��^��A�%�       /    :https://user.mairuan.com/static/css/public.css necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: text/css; charset=UTF-8
+Content-Length: 49402
+ETag: W/"c0fa-171c3949096"
+Server: nginx
+Date: Sun, 14 Jun 2020 08:38:35 GMT
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 29 Apr 2020 01:37:05 GMT
+X-Frame-Options: SAMEORIGIN
+ original-response-headers Server: nginx
+Date: Sun, 14 Jun 2020 08:31:25 GMT
+Content-Type: text/css; charset=UTF-8
+Content-Length: 49402
+Connection: keep-alive
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 29 Apr 2020 01:37:05 GMT
+ETag: W/"c0fa-171c3949096"
+X-Frame-Options: SAMEORIGIN
+ uncompressed-len 0 net-response-time-onstart 101 net-response-time-onstop 154   ��

@@ -1,0 +1,16 @@
+define({
+  "name": "烟草局后端项目接口文档",
+  "version": "1.0.0",
+  "description": "烟草局后端项目接口文档",
+  "title": "YCJ-Services",
+  "url": "http://39.96.52.170:5000/",
+  "sampleUrl": "http://39.96.52.170:5000/",
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2020-04-19T02:21:11.464Z",
+    "url": "http://apidocjs.com",
+    "version": "0.20.0"
+  }
+});

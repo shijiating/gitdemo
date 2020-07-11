@@ -1,0 +1,426 @@
+$(function(){
+    var cjProtocol = window.location.protocol.split(':')[0];
+    if (cjProtocol === 'https') {
+        var API = 'https://api2.mairuan.com/api.php';
+    }else{
+        var API = 'http://api2.mairuan.com/api.php';
+    }
+    var regphone = /^[1][1-9][0-9]{9}$/;
+    var regemail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+    /*切换手机快捷登录、账号登录*/
+    $('.boxnav a').click(function(){
+        $(this).addClass('active').siblings('.active').removeClass('active');
+        var index = $(this).index();
+        var types = $(this).attr('types');
+        $('.forms>form').eq(index).show().siblings('form').hide();
+        $('#types').val(types);
+    });
+
+    /*清除帐号*/
+    $(".clear_txt").click(function(){
+        $(".txtinput").val('');
+    });
+
+    /*登录提交*/
+    $(".box827 .btn_s1.loginbtn").click(function(){
+
+        var loading = layer.load();
+        var types = $("#types").val();
+        var datas = {"types" : types};
+        var arrdatas = $(this).closest("form").serializeArray();        
+        
+        $.each(arrdatas,function(i,v){
+            datas[v.name] = v.value;
+        })  
+
+        if( !regphone.test(datas["username"]) && !regemail.test(datas["username"]) ){
+            layer.close(loading);
+            layer.msg("手机号/邮箱输入有误");
+            return;
+        }
+
+        $.ajax({
+            url: "/loginsubmit",
+            type: "post",
+            contentType:'application/json',
+            data: JSON.stringify(datas),
+            success: function (data){
+                layer.close(loading);
+                if(data.code==200){
+                    var rediurl = $(".rediurl").val();
+                    fnRedirect(rediurl,data,'fromlogin');
+                }else{
+                    
+                    layer.msg(data.message,{time:1000,shift:-1});
+                    if(data.code==429){
+                        $(".img_yzm").click();
+                        $(".img_yzm_txt").val('');
+                        $(".yzm_txt").val('');
+                    }
+                    return;
+                }
+            },
+            error: function(err){ 
+                layer.close(loading);
+                console.log(err);
+            } 
+        })
+    })
+
+    //点击更新图片验证码
+    $('.img_yzm').click(function(){
+        $(this).attr('src', API + '/Imgyzm/login/m=' + Math.random());
+    });
+
+    //注册 显示密码
+    $('.showpw_btn').mousedown(function(){
+        $(this).addClass('active');
+        $(this).siblings('input').attr('type','text');
+    });
+     $('.showpw_btn').mouseup(function(){
+        $(this).removeClass('active');
+        $(this).siblings('input').attr('type','password');
+    });
+
+     //dun
+    var captchaIns;
+    var captchaId = '536ea9bea3aa45cc90b230c0aa594f90';
+    initNECaptcha({
+        element: '#captcha',
+        captchaId: captchaId,
+        mode: 'bind',
+        onVerify: function(err){
+            // todo
+            if(!err){
+                yzmmobilesends();
+                captchaIns && captchaIns.refresh();
+            }
+        }
+    }, function(instance){
+        captchaIns = instance
+    }, function(err){
+        //err
+        console.log(err);
+    });
+
+    //发送验证码
+    $(".yzm_btn").click(function(){
+        captchaIns && captchaIns.verify();// 手动调用verify方法
+    });
+
+    function yzmmobilesends(){
+        var loading = layer.load();
+        var types = $("#types").val();
+        var username = $(".yzm_btn").closest("form").find("input[name='username']").val();
+
+        NECaptchaValidate = $("input[name='NECaptchaValidate']").val();
+
+        var isphone = /^[1][1-9][0-9]{9}$/.test(username);
+        var isemail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test(username);
+
+        if(!isphone && !isemail){
+            layer.close(loading);
+            layer.msg("手机号/邮箱输入有误");
+            return;
+        }
+
+        if(isphone){
+            var datas = {type:1, mobile:username, captchaId:captchaId, NECaptchaValidate:NECaptchaValidate};
+        }
+        if(isemail){
+            var datas = {type:2, email:username, captchaId:captchaId, NECaptchaValidate:NECaptchaValidate};
+        }
+
+        $.ajax({
+            url: "/sendyzm",
+            type: "post",
+            contentType:'application/json',
+            data: JSON.stringify(datas),
+            success: function(data){
+                layer.close(loading);
+                if(data.code==200){
+                    $(".yzm_daojishi").html("119s后重新获取");
+                    $(".yzm_btn").hide();
+                    $(".yzm_daojishi").show();
+
+                    var count = 118;
+                    var myCountDown = self.setInterval(function(){
+                        $(".yzm_daojishi").html(count +"s后重新获取");
+                        if(count==0){
+                            clearInterval(myCountDown);
+                            count = 118;
+                            $(".yzm_daojishi").hide();
+                            $(".yzm_btn").show();
+                        }
+                        count--;
+                    },1000);
+                }else{
+                    layer.msg(data.message,{time:1000,shift:-1});
+                    return;
+                }
+            },
+            error: function(err){ 
+                layer.close(loading);
+                console.log(err);
+            } 
+        });
+    }
+
+
+    /*服务协议*/
+    $(".showfuwuxieyi").on('click',function(){
+        $(".fuwuxieyi_bg").show();
+        $(".fuwuxieyi").show();
+        $(".fuwuxieyi .conbox").load("https://agreement.mairuan.com/user.html?v="+Date.parse(new Date()));
+    });
+
+    $(".fwxy_close").on('click',function(){
+        $(".fuwuxieyi_bg").hide();
+        $(".fuwuxieyi").hide();
+    });
+
+    $(".fuwuxieyi .tongyi").on('click',function(){
+        $(".fuwuxieyi_ck").prop("checked",true);
+        $(".fwxy_close").click();
+    });
+
+    // $(".fuwuxieyi_ck").on('click',function(){
+    //     if(this.checked){/*是否为选中进行判断*/
+    //         $(".reg .next").addClass("");
+    //     }else{
+    //         $(".reg .next").removeClass("");  
+    //     }
+    // });
+
+    /*注册-下一步*/
+    $("#reg_form1 .next").click(function(){
+        var loading = layer.load();
+        // if(!$(".fuwuxieyi_ck").prop('checked')){
+        //     $(".showfuwuxieyi").click();
+        //     layer.close(loading);
+        //     return;
+        // }
+        var types = $("#types").val();
+        var arrdatas = $(this).closest("form").serializeArray();
+        var datas = {"types" : types};
+        $.each(arrdatas,function(i,v){
+            datas[v.name] = v.value;
+        })
+
+        if( !regphone.test(datas["username"]) && !regemail.test(datas["username"]) ){
+            layer.close(loading);
+            layer.msg("手机号/邮箱输入有误");
+            return;
+        }
+
+        $.ajax({
+            url: "/regsubmit/step1",
+            type: "post",
+            contentType:'application/json',
+            data: JSON.stringify(datas),
+            success: function (data){
+                layer.close(loading);
+                if(data.code==200){
+                    $("#reg_form1").hide();
+                    $("#reg_form2").show();
+                    return;
+                }else{
+                    layer.msg(data.message,{time:2000,shift:-1});
+                    return;
+                }
+            },
+            error: function(err){ 
+                layer.close(loading);
+                console.log(err);
+            } 
+        })
+    })
+
+    /*注册提交*/
+    $("#reg_form2 .regbtn").click(function(){
+        var loading = layer.load();
+
+        var types = $("#types").val();
+        var fromid = $(".fromid").val();
+        var arrdatas = $(this).closest("form").serializeArray();
+        var datas = {fromid:fromid, types:types};
+
+        $.each(arrdatas,function(i,v){
+            datas[v.name] = v.value;
+        })
+
+        $.ajax({
+            url: "/regsubmit",
+            type: "post",
+            contentType:'application/json',
+            data: JSON.stringify(datas),
+            success: function (data){
+                if(data.code==200){
+                    var rediurl = $(".rediurl").val();
+
+                   fnRedirect(rediurl,data,'fromreg');
+
+                }else{
+                    layer.close(loading);
+                    layer.msg(data.message,{time:1000,shift:-1});
+                    return;
+                }
+            },
+            error: function(err){ 
+                layer.close(loading);
+                console.log(err);
+            } 
+        })
+    })
+
+    var typesx = $("#types").val();
+    if(typesx==21){
+        // 轮询扫码结果
+        var deadline = new Date().getTime() + 60000;
+
+        var timer = setInterval(function(){
+            var nowtime = new Date().getTime();
+            if(nowtime>deadline){
+                clearInterval(timer);
+                $('#refreshbtn').show().prev('img').hide();
+            }
+
+            $.ajax({
+                method: 'POST',
+                url: API + '/Checksm/index',
+                data: {},
+                dataType: 'json',
+                xhrFields:{
+                    withCredentials:true
+                },
+                success: function(res){
+                    if(res.code==200){
+                        var data = res.data;
+                        clearInterval(timer);
+                        $('#qrcode_form1').hide();
+                        $('#qrcode_form2').show();
+                        $('#qrcode_form2 .headpic img').attr('src',data.headimg);
+                        $('#qrcode_form2 .nickname').text(data.nickname);
+                        var loading = layer.load();
+                        setTimeout(function(){
+                            layer.close(loading);
+                            var datanew = data.new;
+                            if(datanew == 0){
+                                $.cookie('uid',res.data.uid,{path: '/',domain:'mairuan.com'});
+                                $.cookie('auth_token',res.auth_token,{path: '/',domain:'mairuan.com'});
+                                var rediurl = $(".rediurl").val();
+                                fnRedirect(rediurl,res,'fromlogin');
+                            }else if(datanew == 1){
+                                $('#qrcode_form2').hide();
+                                $('#qrcode_form3').show();
+                            }
+                        },3000)
+                    }
+                },
+                error: function(err){
+                    return;
+                }
+            });
+        },1000);
+    }
+
+
+    // 绑定手机号码
+    $('#bangdingbtn').click(function(){
+        var loading = layer.load();
+
+        var rediurl = $(".rediurl").val();
+        // var fromid = $(".fromid").val();
+        var arrdatas = $(this).closest("form").serializeArray();
+        var datas = {};
+
+        $.each(arrdatas,function(i,v){
+            datas[v.name] = v.value;
+        });
+
+        datas["mobile"] = datas["username"];
+
+        if( !regphone.test(datas["username"]) ){
+            layer.close(loading);
+            layer.msg("手机号输入有误");
+            return;
+        }
+
+        $.ajax({
+                method: 'POST',
+                url: API + '/Bindmobile/index',
+                data: datas,
+                dataType: 'json',
+                xhrFields:{
+                    withCredentials:true
+                },
+                success: function(res){
+
+                if(res.code == 200){
+                    $.cookie('uid',res.data.uid,{path: '/',domain:'mairuan.com'});
+                    $.cookie('auth_token',res.auth_token,{path: '/',domain:'mairuan.com'});
+                    var rediurl = $(".rediurl").val();
+                    fnRedirect(rediurl,res,'fromreg');
+                }else{
+                    layer.close(loading);
+                    layer.msg(res.message,{time:1000,shift:-1});
+                    if(res.code == 429){
+                        $('#qrcode_form3 input[name="yzm"]').val('');
+                        $('#qrcode_form3 input[name="pic_yzm"]').val('');
+                    }
+                    return;
+                }
+            },
+            error: function(err){
+                layer.close(loading);
+                console.log(err);
+            }
+        });
+
+    });
+
+});
+
+// 根据redirect地址跳转
+function fnRedirect(rediurl,res,intypes) {
+    if(/\.((cn)|(cc)|(com)|(net))+/.test(rediurl)){
+        if(/\.(mairuan\.com)+/.test(rediurl) && !/(logoshejishi\.mairuan\.com)+/.test(rediurl) && !/(keyshot\.mairuan\.com)+/.test(rediurl)){
+            location.href = rediurl;
+        }else{
+            var rhost = rediurl.match(/^.+\.((cn)|(cc)|(com)|(net))/);
+            var r_url = rhost[0]+'/rd.php?redirect_uri='+rediurl+'&auth_token='+res.auth_token;
+
+            location.href = encodeURI(r_url)+'#'+intypes;
+        }
+    }else{
+        if(!rediurl){
+            location.href = '/';
+        }else{
+            location.href = rediurl;
+        }
+    }
+}
+\��v�$      ^��^��A�%�       ,    :https://user.mairuan.com/static/js/login.js necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Content-Type: application/javascript; charset=UTF-8
+Content-Length: 13557
+ETag: W/"34f5-17133b959a5"
+Server: nginx
+Date: Sun, 14 Jun 2020 08:38:35 GMT
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 01 Apr 2020 03:11:57 GMT
+X-Frame-Options: SAMEORIGIN
+ original-response-headers Server: nginx
+Date: Sun, 14 Jun 2020 08:31:26 GMT
+Content-Type: application/javascript; charset=UTF-8
+Content-Length: 13557
+Connection: keep-alive
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Wed, 01 Apr 2020 03:11:57 GMT
+ETag: W/"34f5-17133b959a5"
+X-Frame-Options: SAMEORIGIN
+ uncompressed-len 0 net-response-time-onstart 252 net-response-time-onstop 253   4�

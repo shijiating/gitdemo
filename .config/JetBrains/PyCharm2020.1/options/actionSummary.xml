@@ -1,0 +1,57 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="$Copy">
+        <ActionSummary times="9" last="1592130786202" />
+      </entry>
+      <entry key="$Cut">
+        <ActionSummary times="1" last="1592289917102" />
+      </entry>
+      <entry key="$Delete">
+        <ActionSummary times="1" last="1592289921929" />
+      </entry>
+      <entry key="$SelectAll">
+        <ActionSummary times="1" last="1592450466600" />
+      </entry>
+      <entry key="$Undo">
+        <ActionSummary times="4" last="1592312208316" />
+      </entry>
+      <entry key="EditorBackSpace">
+        <ActionSummary times="63" last="1592312192163" />
+      </entry>
+      <entry key="EditorCopy">
+        <ActionSummary times="7" last="1592450467306" />
+      </entry>
+      <entry key="EditorLeft">
+        <ActionSummary times="16" last="1592130788715" />
+      </entry>
+      <entry key="EditorPaste">
+        <ActionSummary times="1" last="1592312119454" />
+      </entry>
+      <entry key="Find">
+        <ActionSummary times="2" last="1592311623802" />
+      </entry>
+      <entry key="OpenFile">
+        <ActionSummary times="2" last="1592125337895" />
+      </entry>
+      <entry key="SaveAll">
+        <ActionSummary times="15" last="1592312209713" />
+      </entry>
+      <entry key="ShowSettings">
+        <ActionSummary times="6" last="1592290674549" />
+      </entry>
+      <entry key="WelcomeScreen.OpenDirectoryProject">
+        <ActionSummary times="2" last="1592124575353" />
+      </entry>
+      <entry key="com.intellij.find.SearchTextArea$ClearAction">
+        <ActionSummary times="2" last="1592312665457" />
+      </entry>
+      <entry key="com.intellij.ui.CommonActionsPanel$AddButton">
+        <ActionSummary times="14" last="1592290057835" />
+      </entry>
+      <entry key="com.intellij.ui.CommonActionsPanel$RemoveButton">
+        <ActionSummary times="2" last="1592290682910" />
+      </entry>
+    </data>
+  </component>
+</application>

@@ -1,0 +1,41 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="PyCharm.InitialConfiguration" value="true" />
+    <property name="PyCharm.InitialConfiguration.V2" value="true" />
+    <property name="PyCharm.InitialConfiguration.V3" value="true" />
+    <property name="PyCharm.InitialConfiguration.V4" value="true" />
+    <property name="PyCharm.InitialConfiguration.V5" value="true" />
+    <property name="PyCharm.InitialConfiguration.V6" value="true" />
+    <property name="PyCharm.InitialConfiguration.V7" value="true" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/chinafyl-adminycj-master&#10;/mnt/hgfs/ycj/adminycj/ycj35&#10;/mnt/hgfs/ycj/adminycj" />
+    <property name="file.gist.reindex.count" value="6849" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="lastSeenTip" value="neue-NavigateToFilePath.html" />
+    <property name="lastTimeTipsWereShown" value="1592450020564" />
+    <property name="last_opened_file_path" value="/mnt/hgfs/ycj/adminycj" />
+    <property name="seenTips" value="neue-DBConsole.html,neue-GoToDeclaration.html,neue-NavigateToFilePath.html" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="3.8.2" />
+  </component>
+  <component name="PyTestFrameworkService">
+    <option name="SDK_TO_PYTEST">
+      <map>
+        <entry key="$USER_HOME$/chinafyl-adminycj-master/venv/ycj0616/bin/python" value="false" />
+        <entry key="$USER_HOME$/chinafyl-adminycj-master/venv/ycj35/bin/python" value="false" />
+      </map>
+    </option>
+    <option name="SDK_TO_NOSETEST">
+      <map>
+        <entry key="$USER_HOME$/chinafyl-adminycj-master/venv/ycj0616/bin/python" value="false" />
+        <entry key="$USER_HOME$/chinafyl-adminycj-master/venv/ycj35/bin/python" value="false" />
+      </map>
+    </option>
+    <option name="SDK_TO_TRIALTEST">
+      <map>
+        <entry key="$USER_HOME$/chinafyl-adminycj-master/venv/ycj0616/bin/python" value="false" />
+        <entry key="$USER_HOME$/chinafyl-adminycj-master/venv/ycj35/bin/python" value="false" />
+      </map>
+    </option>
+  </component>
+</application>

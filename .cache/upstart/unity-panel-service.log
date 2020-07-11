@@ -1,0 +1,107 @@
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-WARNING **: Already have a menu for window ID 67108867 with path /com/canonical/menu/4000003 from :1.86, unregistering that one
+
+(unity-panel-service:1850): Indicator-Appmenu-WARNING **: Already have a menu for window ID 67108867 with path /com/canonical/menu/4000003 from :1.86, unregistering that one
+
+(unity-panel-service:1850): Indicator-Appmenu-WARNING **: Already have a menu for window ID 67108867 with path /com/canonical/menu/4000003 from :1.90, unregistering that one
+
+(unity-panel-service:1850): Indicator-Appmenu-WARNING **: Already have a menu for window ID 67108867 with path /com/canonical/menu/4000003 from :1.90, unregistering that one
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-WARNING **: Already have a menu for window ID 90177547 with path /com/canonical/menu/560000B from :1.95, unregistering that one
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): LIBDBUSMENU-GLIB-WARNING **: Getting layout failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 com.canonical.dbusmenu 的对象上没有 /com/canonical/menu/560000B 接口
+
+(unity-panel-service:1850): LIBDBUSMENU-GLIB-WARNING **: Getting layout failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 com.canonical.dbusmenu 的对象上没有 /com/canonical/menu/560000B 接口
+
+(unity-panel-service:1850): Indicator-Appmenu-WARNING **: Already have a menu for window ID 90177544 with path /com/canonical/menu/5600008 from :1.95, unregistering that one
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch xid: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch type: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch monitor: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch maximized state: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch xid: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch xid: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch xid: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch property `_GTK_UNIQUE_BUS_NAME': GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch path: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.window 的对象上没有 /org/ayatana/bamf/window/90177544 接口
+
+** (unity-panel-service:1850): WARNING **: Unable to fetch children: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.view 的对象上没有 /org/ayatana/bamf/application/0x1cc7c90 接口
+
+
+** (unity-panel-service:1850): WARNING **: Failed to fetch path: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 org.ayatana.bamf.application 的对象上没有 /org/ayatana/bamf/application/0x1cc7c90 接口
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): LIBDBUSMENU-GLIB-WARNING **: Getting layout failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: 在路径 com.canonical.dbusmenu 的对象上没有 /com/canonical/menu/5600008 接口
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: window_menu_model_new: assertion 'BAMF_IS_APPLICATION(app)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: track_menus: assertion 'IS_WINDOW_MENU(menus)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed
+
+(unity-panel-service:1850): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'IS_WINDOW_MENU(wm)' failed

@@ -1,0 +1,4 @@
+
+(process:1905): indicator-application-service-CRITICAL **: Could not grab DBus properties for org.kde.StatusNotifierItem-1643-14: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.kde.StatusNotifierItem-1643-14 was not provided by any .service files
+
+(process:1905): indicator-application-service-CRITICAL **: Could not grab DBus properties for org.kde.StatusNotifierItem-1643-15: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.kde.StatusNotifierItem-1643-15 was not provided by any .service files
